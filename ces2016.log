@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  12 SEP 2016 15:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 SEP 2016 13:20
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -615,11 +615,13 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 485.
 
 (./src/introduction.tex
+
+LaTeX Warning: Citation `tvlsi2015' on page 1 undefined on input line 20.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 37.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 37.
-
 
 LaTeX Warning: Reference `sec:related' on page 1 undefined on input line 53.
 
@@ -642,22 +644,107 @@ sion > 4. Object streams disabled now.
 
 
 ]
+Underfull \hbox (badness 3078) in paragraph at lines 12--20
+\OT1/ptm/m/n/10 mod-els such as At-ten-tion by In-for-ma-tion Max-i-miz-tion
+ []
 
-LaTeX Warning: Reference `sec:related' on page 2 undefined on input line 53.
+<./figs/mp1a.jpg, id=13, 335.70581pt x 152.2283pt>
+File: ./figs/mp1a.jpg Graphic file (type jpg)
+ <use ./figs/mp1a.jpg>
+Package pdftex.def Info: ./figs/mp1a.jpg used on input line 26.
+(pdftex.def)             Requested size: 126.0pt x 57.13425pt.
 
+<./figs/mp1b.jpg, id=15, 328.3448pt x 153.89871pt>
+File: ./figs/mp1b.jpg Graphic file (type jpg)
+ <use ./figs/mp1b.jpg>
+Package pdftex.def Info: ./figs/mp1b.jpg used on input line 26.
+(pdftex.def)             Requested size: 126.0pt x 59.05743pt.
 
-LaTeX Warning: Reference `sec:saliency' on page 2 undefined on input line 53.
+<./figs/mp2a.jpg, id=17, 333.4056pt x 154.6578pt>
+File: ./figs/mp2a.jpg Graphic file (type jpg)
+ <use ./figs/mp2a.jpg>
+Package pdftex.def Info: ./figs/mp2a.jpg used on input line 27.
+(pdftex.def)             Requested size: 126.0pt x 58.44727pt.
 
+<./figs/mp2b.jpg, id=19, 330.9966pt x 151.767pt>
+File: ./figs/mp2b.jpg Graphic file (type jpg)
+ <use ./figs/mp2b.jpg>
+Package pdftex.def Info: ./figs/mp2b.jpg used on input line 27.
+(pdftex.def)             Requested size: 126.0pt x 57.77162pt.
 
-LaTeX Warning: Reference `sec:led' on page 2 undefined on input line 53.
+<./figs/mp3a.jpg, id=21, 331.9602pt x 151.2852pt>
+File: ./figs/mp3a.jpg Graphic file (type jpg)
+ <use ./figs/mp3a.jpg>
+Package pdftex.def Info: ./figs/mp3a.jpg used on input line 28.
+(pdftex.def)             Requested size: 126.0pt x 57.42201pt.
 
+<./figs/mp3b.jpg, id=23, 330.033pt x 149.8398pt>
+File: ./figs/mp3b.jpg Graphic file (type jpg)
+ <use ./figs/mp3b.jpg>
+Package pdftex.def Info: ./figs/mp3b.jpg used on input line 28.
+(pdftex.def)             Requested size: 126.0pt x 57.20493pt.
 
-LaTeX Warning: Reference `sec:sysarch' on page 2 undefined on input line 53.
+<./figs/viconetexample.png, id=25, 299.1978pt x 171.039pt>
+File: ./figs/viconetexample.png Graphic file (type png)
 
+<use ./figs/viconetexample.png>
+Package pdftex.def Info: ./figs/viconetexample.png used on input line 54.
+(pdftex.def)             Requested size: 226.79846pt x 129.65431pt.
 
-LaTeX Warning: Reference `sec:results' on page 2 undefined on input line 53.
+<./figs/walk_left_p1.png, id=27, 562.1pt x 421.575pt>
+File: ./figs/walk_left_p1.png Graphic file (type png)
 
-) (./src/interfaces.tex [2]
+<use ./figs/walk_left_p1.png>
+Package pdftex.def Info: ./figs/walk_left_p1.png used on input line 70.
+(pdftex.def)             Requested size: 126.0pt x 94.49648pt.
+
+<./figs/walk_left_p2.png, id=29, 562.1pt x 421.575pt>
+File: ./figs/walk_left_p2.png Graphic file (type png)
+
+<use ./figs/walk_left_p2.png>
+Package pdftex.def Info: ./figs/walk_left_p2.png used on input line 70.
+(pdftex.def)             Requested size: 126.0pt x 94.49648pt.
+
+<./figs/walk_right_p1.png, id=31, 562.1pt x 421.575pt>
+File: ./figs/walk_right_p1.png Graphic file (type png)
+
+<use ./figs/walk_right_p1.png>
+Package pdftex.def Info: ./figs/walk_right_p1.png used on input line 72.
+(pdftex.def)             Requested size: 126.0pt x 94.49648pt.
+
+<./figs/walk_right_p2.png, id=33, 562.1pt x 421.575pt>
+File: ./figs/walk_right_p2.png Graphic file (type png)
+
+<use ./figs/walk_right_p2.png>
+Package pdftex.def Info: ./figs/walk_right_p2.png used on input line 72.
+(pdftex.def)             Requested size: 126.0pt x 94.49648pt.
+
+<./figs/walk_straight_p1.png, id=35, 562.1pt x 421.575pt>
+File: ./figs/walk_straight_p1.png Graphic file (type png)
+
+<use ./figs/walk_straight_p1.png>
+Package pdftex.def Info: ./figs/walk_straight_p1.png used on input line 74.
+(pdftex.def)             Requested size: 126.0pt x 94.49648pt.
+
+<./figs/walk_straight_p2.png, id=37, 562.1pt x 421.575pt>
+File: ./figs/walk_straight_p2.png Graphic file (type png)
+
+<use ./figs/walk_straight_p2.png>
+Package pdftex.def Info: ./figs/walk_straight_p2.png used on input line 74.
+(pdftex.def)             Requested size: 126.0pt x 94.49648pt.
+
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 68--77
+ [][] 
+ []
+
+) (./src/interfaces.tex [2 <./figs/mp1a.jpg> <./figs/mp1b.jpg> <./figs/mp2a.jpg
+> <./figs/mp2b.jpg> <./figs/mp3a.jpg> <./figs/mp3b.jpg> <./figs/walk_left_p1.pn
+g (PNG copy)> <./figs/walk_left_p2.png (PNG copy)> <./figs/walk_right_p1.png (P
+NG copy)> <./figs/walk_right_p2.png (PNG copy)> <./figs/walk_straight_p1.png (P
+NG copy)> <./figs/walk_straight_p2.png (PNG copy)> <./figs/viconetexample.png>]
+
+LaTeX Warning: Citation `tvlsi2015' on page 3 undefined on input line 20.
+
 
 LaTeX Warning: Reference `sec:related' on page 3 undefined on input line 53.
 
@@ -673,7 +760,11 @@ LaTeX Warning: Reference `sec:sysarch' on page 3 undefined on input line 53.
 
 LaTeX Warning: Reference `sec:results' on page 3 undefined on input line 53.
 
-) (./src/hardware.tex [3]
+) (./src/hardware.tex
+
+LaTeX Warning: Citation `tvlsi2015' on page 3 undefined on input line 20.
+
+[3]
 
 LaTeX Warning: Reference `sec:related' on page 4 undefined on input line 53.
 
@@ -689,89 +780,30 @@ LaTeX Warning: Reference `sec:sysarch' on page 4 undefined on input line 53.
 
 LaTeX Warning: Reference `sec:results' on page 4 undefined on input line 53.
 
-) (./src/conclusion.tex
+) (./src/conclusion.tex) (./ces2016.bbl) [4] [5
 
-LaTeX Warning: Reference `sec:related' on page 4 undefined on input line 53.
-
-
-LaTeX Warning: Reference `sec:saliency' on page 4 undefined on input line 53.
-
-
-LaTeX Warning: Reference `sec:led' on page 4 undefined on input line 53.
-
-
-LaTeX Warning: Reference `sec:sysarch' on page 4 undefined on input line 53.
-
-
-LaTeX Warning: Reference `sec:results' on page 4 undefined on input line 53.
-
-) (./ces2016.bbl [4]) <bios/peter.jpg, id=22, 170.236pt x 191.114pt>
-File: bios/peter.jpg Graphic file (type jpg)
-
-<use bios/peter.jpg>
-Package pdftex.def Info: bios/peter.jpg used on input line 747.
-(pdftex.def)             Requested size: 72.26999pt x -217.15196pt.
-File: bios/peter.jpg Graphic file (type jpg)
- <use bios/peter.jpg>
-Package pdftex.def Info: bios/peter.jpg used on input line 747.
-(pdftex.def)             Requested size: 72.26999pt x -217.15196pt.
-
-<bios/siddharth.jpg, id=25, 144.54pt x 144.54pt>
-File: bios/siddharth.jpg Graphic file (type jpg)
- <use bios/siddharth.jpg>
-Package pdftex.def Info: bios/siddharth.jpg used on input line 753.
-(pdftex.def)             Requested size: 72.26999pt x 72.2698pt.
-File: bios/siddharth.jpg Graphic file (type jpg)
-
-<use bios/siddharth.jpg>
-Package pdftex.def Info: bios/siddharth.jpg used on input line 753.
-(pdftex.def)             Requested size: 72.26999pt x 72.2698pt.
- <bios/jack.jpg, id=28, 271.0125pt x 271.0125pt>
-File: bios/jack.jpg Graphic file (type jpg)
-
-<use bios/jack.jpg>
-Package pdftex.def Info: bios/jack.jpg used on input line 758.
-(pdftex.def)             Requested size: 72.26999pt x 72.2687pt.
-File: bios/jack.jpg Graphic file (type jpg)
- <use bios/jack.jpg>
-Package pdftex.def Info: bios/jack.jpg used on input line 758.
-(pdftex.def)             Requested size: 72.26999pt x 72.2687pt.
-
-<bios/vijay.jpg, id=31, 216.05719pt x 161.10187pt>
-File: bios/vijay.jpg Graphic file (type jpg)
- <use bios/vijay.jpg>
-Package pdftex.def Info: bios/vijay.jpg used on input line 771.
-(pdftex.def)             Requested size: 72.26999pt x 53.88649pt.
-File: bios/vijay.jpg Graphic file (type jpg)
-
-<use bios/vijay.jpg>
-Package pdftex.def Info: bios/vijay.jpg used on input line 771.
-(pdftex.def)             Requested size: 72.26999pt x 53.88649pt.
- [5
-
- <./bios/peter.jpg> <./bios/siddharth.jpg> <./bios/jack.jpg> <./bios/vijay.jpg>
 ] (./ces2016.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 11154 strings out of 493315
- 201918 string characters out of 6137904
- 263716 words of memory out of 5000000
- 14349 multiletter control sequences out of 15000+600000
- 40809 words of font info for 79 fonts, out of 8000000 for 9000
+ 11211 strings out of 493315
+ 203172 string characters out of 6137904
+ 262758 words of memory out of 5000000
+ 14395 multiletter control sequences out of 15000+600000
+ 41887 words of font info for 80 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
- 55i,10n,55p,676b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,55p,676b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on ces2016.pdf (5 pages, 403251 bytes).
+Output written on ces2016.pdf (5 pages, 449582 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
+ 81 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 
