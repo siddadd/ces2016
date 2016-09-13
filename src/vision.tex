@@ -1,14 +1,55 @@
-Since the invention of the first television, the display system has manifested into a critical human-computer-interface 
-capable of bringing vivid and abundant visual information to users. 
+%CNNs
 
-%Saliency
-\begin{figure*}[!htb]
+\subsection{Visual Attention}
+Visual attention can be described using pixel-level saliency models such as Attention by Information Maximiztion (AIM)~\cite{Bruceb}.
+From a consumer perspective, such models can be used in automatic household pantry organization and maintenance, particularly 
+as part of visual assist systems for the visually impaired. Computationally, AIM determines visual salience based on the amount of information present in 
+local regions of the image within the context of its surrounding region. 
+Suppose a product (say cookies) is wrongly placed in a shelf that stores products of another type (say shampoo), the segment of the shelf image containing cookies is 
+``less likely'' (higher self-information) to appear in the scene which mostly has image patches of shampoo, 
+and therefore it is easily distinguishable or is considered ``salient''. This is shown in Figure~\ref{tab:saliencya}.
+Once a salient region is detected, a second stage of object classification can be deployed to identify the wrongly placed object.  
+
+%Saliency App 1
+\begin{figure}[!htb]
 \centering
-\begin{tabular}{@{}c@{} @{}c@{} @{}c@{}}
-\vspace{-15pt}
-\includegraphics[width=0.33\linewidth,trim={0 0 0 0},clip]{scott_img.jpg} & \includegraphics[width=0.33\linewidth,trim={0 0 0 0},clip]{scott_sali.jpg} & \includegraphics[width=0.33\linewidth,trim={0 0 0 0},clip]{scott_roi.jpg}\\[\abovecaptionskip]
-\small(a) Original image & \small (b) Saliency Map & \small (c) Regions of Interest \\
+\begin{tabular}{@{}l@{} @{}l@{}}
+\vspace{-5pt}
+\includegraphics[width=0.5\linewidth,trim={0 0 0 0},clip]{mp1a.jpg} & \includegraphics[width=0.5\linewidth,trim={0 0 0 0},clip]{mp1b.jpg}\\[\abovecaptionskip]
+\includegraphics[width=0.5\linewidth,trim={0 0 0 0},clip]{mp2a.jpg} & \includegraphics[width=0.5\linewidth,trim={0 0 0 0},clip]{mp2b.jpg}\\[\abovecaptionskip]
+\includegraphics[width=0.5\linewidth,trim={0 0 0 0},clip]{mp3a.jpg} & \includegraphics[width=0.5\linewidth,trim={0 0 0 0},clip]{mp3b.jpg}\\[\abovecaptionskip]
+\small(a) Original image & \small (b) Thresholded saliency map\\
 \end{tabular}
-\caption{Saliency.}
-\label{tab:saliency}
-\end{figure*}
+\caption{Saliency used for missplaced item detection.}
+\label{tab:saliencya}
+\end{figure}
+
+%%Saliency App 2
+%\begin{figure*}[!htb]
+%\centering
+%\begin{tabular}{@{}c@{} @{}c@{} @{}c@{}}
+%\vspace{-5pt}
+%\includegraphics[width=0.33\linewidth,trim={0 0 0 0},clip]{scott_img.jpg} & \includegraphics[width=0.33\linewidth,trim={0 0 0 0},clip]{scott_sali.jpg} & \includegraphics[width=0.33\linewidth,trim={0 0 0 0},clip]{scott_roi.jpg}\\[\abovecaptionskip]
+%\small(a) Original image & \small (b) Saliency Map & \small (c) Regions of Interest \\
+%\end{tabular}
+%\caption{Saliency.}
+%\label{tab:saliencyb}
+%\end{figure*}
+
+\subsection{Spatial Contexts}
+While CNNs have been widely used for image category recognition, when it comes to recognizing objects in video streams, spatial context can play a huge role in 
+reducing the workload on these computationally intensive classifiers. As shown in Figure~\ref{fig:viconet}, visual scenes can be represented as a knowledge graph.   
+For example, in ~\cite{estimedia2015}, the authors proposed a Bayesian network called Visual Co-occurrence Network (ViCoNet) to not only improve the performance of their system, but also increase the recognition rates.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\linewidth]{viconetexample.png}
+\caption{Spatial relations exist between frequently co-occurring objects. These relationships can then be used as context cues to guide the classifiers.}
+\label{fig:viconet}
+\end{figure} 
+
+\subsection{Multimodal Fusion}
+A rich topic of exploration is figuring out a way to fuse multi-sensor information, especially data from vision that is fundamentally two-dimensional with a temporal 
+unidimensional stream of data from other sensors to make predictions of the current state of the user. 
+Humans use multisensory information from different sensory systems and combine it to influence 
+perception, decisions, and overt behavior~\cite{stein2009neural}. Wearables can be used in a similar fashion to help users in different tasks. 
