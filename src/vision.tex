@@ -1,16 +1,21 @@
+%Deep Learning
+
 %CNNs
 Convolutional Neural Networks (CNNs) have become extremely popular and being used to solve a variety of image recognition problems. 
 More recent and advanced CNN architectures have become deeper and more complex haing 10 to 20 
 layers of Rectified Linear Units, hundreds of millions of weights, and billions of connections between units.
 The reader is pointed to ~\cite{Bengio2009} for insights on deep architectures in general and ~\cite{DNNNature2015} for CNN-based learning and their recent advances.
 
-An important insight recently unearthed by ~\cite{facenet}, is that the accuracies of CNNs can saturate after a few million images of training data.
+While CNNs are an important thrust of research, they tend to be computationally expensive and deploying them on mobile platforms results in huge memory overheads. 
+Another important insight recently unearthed by ~\cite{facenet}, is that the accuracies of CNNs can saturate after a few million images of training data.
 Also the overall efficacy of the image recognition pipeline is contingent upon having a good region proposal scheme that feeds regions of interest (RoIs) into the CNN. 
 A variety of strategies can be used to augment the capabilities of neural networks and we discuss a few below.
 
 \subsection{Visual Attention}
-Visual attention can be described using pixel-level saliency models such as Attention by Information Maximiztion (AIM)~\cite{Bruceb}.
-From a consumer perspective, such models can be used in automatic household pantry organization and maintenance, particularly 
+Humans process only certain streams of visual information depending upon the task at hand. 
+From a systems perspective, visual attention can be used as an efficient mechanism to prioritize visual processing.  
+Pixel-level saliency models such as Attention by Information Maximiztion (AIM)~\cite{Bruceb} can be used in 
+automatic household pantry organization and maintenance, particularly 
 as part of visual assist systems for the visually impaired. Computationally, AIM determines visual salience based on the amount of information present in 
 local regions of the image within the context of its surrounding region. 
 Suppose a product (say cookies) is wrongly placed in a shelf that stores products of another type (say shampoo), the segment of the shelf image containing cookies is 
@@ -44,10 +49,16 @@ Once a salient region is detected, a second stage of object classification can b
 %\label{tab:saliencyb}
 %\end{figure*}
 
-\subsection{Spatial Context}
+\subsection{Context}
+% Hierarchy of Parts
+While deep learning models use learnt features to recognize objects in a scene, another contrasting approach is to use graphical models that build hierarchical 
+representations of objects~\cite{hop}. Compositional rules can be used to build context cues to recognize objects never seen before. For example, an object having 
+four wheels can be classified as a vehicle even if it is a new model of a car. 
+% Spatial Context
 While CNNs have been widely used for image category recognition, when it comes to recognizing objects in video streams, spatial context can play a huge role in 
 reducing the workload on these computationally intensive classifiers. As shown in Figure~\ref{fig:viconet}, visual scenes can be represented as a knowledge graph.   
-For example, in ~\cite{estimedia2015}, the authors proposed a Bayesian network called Visual Co-occurrence Network (ViCoNet) to not only improve the performance of their system, but also increase the recognition rates.
+For example, in ~\cite{estimedia2015}, the authors proposed a Bayesian network called Visual Co-occurrence Network (ViCoNet) to not 
+only improve the performance of their system, but also increase the recognition rates.
 
 \begin{figure}[!htb]
 \centering
@@ -57,10 +68,12 @@ For example, in ~\cite{estimedia2015}, the authors proposed a Bayesian network c
 \end{figure} 
 
 \subsection{Multimodal Fusion}
-A rich topic of exploration is figuring out a way to fuse multi-sensor information, especially data from vision that is fundamentally two-dimensional with a temporal 
-unidimensional stream of data from other sensors to make predictions of the current state of the user. 
 Humans use multisensory information from different sensory systems and combine it to influence 
 perception, decisions, and overt behavior~\cite{stein2009neural}. Wearables can be used in a similar fashion to help users in different tasks. 
+A rich topic of exploration is figuring out a way to fuse multi-sensor information, especially data from vision that is fundamentally two-dimensional with a temporal 
+unidimensional stream of data from other sensors to make predictions of the current state of the user. Multi-sensor information coming in from different devices can be 
+streamed to distributed networks that can then make real-time updates. In Figure~\ref{tab:sensor}, we illustrate data recorded from a wearable device while two users
+walk in three different directions. These sensors are sensitive enough to be used as localization cues. 
 
 %MultiModal Analysis
 \begin{figure}[!htb]

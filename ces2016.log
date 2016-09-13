@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 SEP 2016 13:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  13 SEP 2016 18:13
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -644,104 +644,98 @@ sion > 4. Object streams disabled now.
 
 
 ]
-Underfull \hbox (badness 3078) in paragraph at lines 12--20
-\OT1/ptm/m/n/10 mod-els such as At-ten-tion by In-for-ma-tion Max-i-miz-tion
- []
-
 <./figs/mp1a.jpg, id=13, 335.70581pt x 152.2283pt>
 File: ./figs/mp1a.jpg Graphic file (type jpg)
  <use ./figs/mp1a.jpg>
-Package pdftex.def Info: ./figs/mp1a.jpg used on input line 26.
+Package pdftex.def Info: ./figs/mp1a.jpg used on input line 31.
 (pdftex.def)             Requested size: 126.0pt x 57.13425pt.
 
 <./figs/mp1b.jpg, id=15, 328.3448pt x 153.89871pt>
 File: ./figs/mp1b.jpg Graphic file (type jpg)
  <use ./figs/mp1b.jpg>
-Package pdftex.def Info: ./figs/mp1b.jpg used on input line 26.
+Package pdftex.def Info: ./figs/mp1b.jpg used on input line 31.
 (pdftex.def)             Requested size: 126.0pt x 59.05743pt.
 
 <./figs/mp2a.jpg, id=17, 333.4056pt x 154.6578pt>
 File: ./figs/mp2a.jpg Graphic file (type jpg)
  <use ./figs/mp2a.jpg>
-Package pdftex.def Info: ./figs/mp2a.jpg used on input line 27.
+Package pdftex.def Info: ./figs/mp2a.jpg used on input line 32.
 (pdftex.def)             Requested size: 126.0pt x 58.44727pt.
 
 <./figs/mp2b.jpg, id=19, 330.9966pt x 151.767pt>
 File: ./figs/mp2b.jpg Graphic file (type jpg)
  <use ./figs/mp2b.jpg>
-Package pdftex.def Info: ./figs/mp2b.jpg used on input line 27.
+Package pdftex.def Info: ./figs/mp2b.jpg used on input line 32.
 (pdftex.def)             Requested size: 126.0pt x 57.77162pt.
 
 <./figs/mp3a.jpg, id=21, 331.9602pt x 151.2852pt>
 File: ./figs/mp3a.jpg Graphic file (type jpg)
  <use ./figs/mp3a.jpg>
-Package pdftex.def Info: ./figs/mp3a.jpg used on input line 28.
+Package pdftex.def Info: ./figs/mp3a.jpg used on input line 33.
 (pdftex.def)             Requested size: 126.0pt x 57.42201pt.
 
 <./figs/mp3b.jpg, id=23, 330.033pt x 149.8398pt>
 File: ./figs/mp3b.jpg Graphic file (type jpg)
  <use ./figs/mp3b.jpg>
-Package pdftex.def Info: ./figs/mp3b.jpg used on input line 28.
+Package pdftex.def Info: ./figs/mp3b.jpg used on input line 33.
 (pdftex.def)             Requested size: 126.0pt x 57.20493pt.
 
 <./figs/viconetexample.png, id=25, 299.1978pt x 171.039pt>
 File: ./figs/viconetexample.png Graphic file (type png)
 
 <use ./figs/viconetexample.png>
-Package pdftex.def Info: ./figs/viconetexample.png used on input line 54.
+Package pdftex.def Info: ./figs/viconetexample.png used on input line 65.
 (pdftex.def)             Requested size: 226.79846pt x 129.65431pt.
 
 <./figs/walk_left_p1.png, id=27, 562.1pt x 421.575pt>
 File: ./figs/walk_left_p1.png Graphic file (type png)
 
 <use ./figs/walk_left_p1.png>
-Package pdftex.def Info: ./figs/walk_left_p1.png used on input line 70.
+Package pdftex.def Info: ./figs/walk_left_p1.png used on input line 83.
 (pdftex.def)             Requested size: 126.0pt x 94.49648pt.
 
 <./figs/walk_left_p2.png, id=29, 562.1pt x 421.575pt>
 File: ./figs/walk_left_p2.png Graphic file (type png)
 
 <use ./figs/walk_left_p2.png>
-Package pdftex.def Info: ./figs/walk_left_p2.png used on input line 70.
+Package pdftex.def Info: ./figs/walk_left_p2.png used on input line 83.
 (pdftex.def)             Requested size: 126.0pt x 94.49648pt.
 
 <./figs/walk_right_p1.png, id=31, 562.1pt x 421.575pt>
 File: ./figs/walk_right_p1.png Graphic file (type png)
 
 <use ./figs/walk_right_p1.png>
-Package pdftex.def Info: ./figs/walk_right_p1.png used on input line 72.
+Package pdftex.def Info: ./figs/walk_right_p1.png used on input line 85.
 (pdftex.def)             Requested size: 126.0pt x 94.49648pt.
 
 <./figs/walk_right_p2.png, id=33, 562.1pt x 421.575pt>
 File: ./figs/walk_right_p2.png Graphic file (type png)
 
 <use ./figs/walk_right_p2.png>
-Package pdftex.def Info: ./figs/walk_right_p2.png used on input line 72.
+Package pdftex.def Info: ./figs/walk_right_p2.png used on input line 85.
 (pdftex.def)             Requested size: 126.0pt x 94.49648pt.
 
 <./figs/walk_straight_p1.png, id=35, 562.1pt x 421.575pt>
 File: ./figs/walk_straight_p1.png Graphic file (type png)
 
 <use ./figs/walk_straight_p1.png>
-Package pdftex.def Info: ./figs/walk_straight_p1.png used on input line 74.
+Package pdftex.def Info: ./figs/walk_straight_p1.png used on input line 87.
 (pdftex.def)             Requested size: 126.0pt x 94.49648pt.
 
 <./figs/walk_straight_p2.png, id=37, 562.1pt x 421.575pt>
 File: ./figs/walk_straight_p2.png Graphic file (type png)
 
 <use ./figs/walk_straight_p2.png>
-Package pdftex.def Info: ./figs/walk_straight_p2.png used on input line 74.
+Package pdftex.def Info: ./figs/walk_straight_p2.png used on input line 87.
 (pdftex.def)             Requested size: 126.0pt x 94.49648pt.
 
-Overfull \hbox (3.50006pt too wide) in paragraph at lines 68--77
+Overfull \hbox (3.50006pt too wide) in paragraph at lines 81--90
  [][] 
  []
 
 ) (./src/interfaces.tex [2 <./figs/mp1a.jpg> <./figs/mp1b.jpg> <./figs/mp2a.jpg
-> <./figs/mp2b.jpg> <./figs/mp3a.jpg> <./figs/mp3b.jpg> <./figs/walk_left_p1.pn
-g (PNG copy)> <./figs/walk_left_p2.png (PNG copy)> <./figs/walk_right_p1.png (P
-NG copy)> <./figs/walk_right_p2.png (PNG copy)> <./figs/walk_straight_p1.png (P
-NG copy)> <./figs/walk_straight_p2.png (PNG copy)> <./figs/viconetexample.png>]
+> <./figs/mp2b.jpg> <./figs/mp3a.jpg> <./figs/mp3b.jpg> <./figs/viconetexample.
+png>]
 
 LaTeX Warning: Citation `tvlsi2015' on page 3 undefined on input line 20.
 
@@ -760,11 +754,13 @@ LaTeX Warning: Reference `sec:sysarch' on page 3 undefined on input line 53.
 
 LaTeX Warning: Reference `sec:results' on page 3 undefined on input line 53.
 
-) (./src/hardware.tex
+) (./src/hardware.tex [3 <./figs/walk_left_p1.png (PNG copy)> <./figs/walk_left
+_p2.png (PNG copy)> <./figs/walk_right_p1.png (PNG copy)> <./figs/walk_right_p2
+.png (PNG copy)> <./figs/walk_straight_p1.png (PNG copy)> <./figs/walk_straight
+_p2.png (PNG copy)>]
 
-LaTeX Warning: Citation `tvlsi2015' on page 3 undefined on input line 20.
+LaTeX Warning: Citation `tvlsi2015' on page 4 undefined on input line 20.
 
-[3]
 
 LaTeX Warning: Reference `sec:related' on page 4 undefined on input line 53.
 
@@ -788,10 +784,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 11211 strings out of 493315
- 203172 string characters out of 6137904
- 262758 words of memory out of 5000000
- 14395 multiletter control sequences out of 15000+600000
+ 11212 strings out of 493315
+ 203177 string characters out of 6137904
+ 261762 words of memory out of 5000000
+ 14396 multiletter control sequences out of 15000+600000
  41887 words of font info for 80 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
  55i,12n,55p,676b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -801,7 +797,7 @@ live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
 ve/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2013/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texmf-dist/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on ces2016.pdf (5 pages, 449582 bytes).
+Output written on ces2016.pdf (5 pages, 451719 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

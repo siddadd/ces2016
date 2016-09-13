@@ -69,6 +69,11 @@ F.~Schroff, D.~Kalenichenko, and J.~Philbin, ``Facenet: {A} unified embedding
 \bibitem{Bruceb}
 N.~Bruce, ``{An Information Theoretic Model of Saliency and Visual Search}.''
 
+\bibitem{hop}
+I.~Kokkinos and A.~Yuille, ``{HOP: Hierarchical Object Parsing},'' in
+  \emph{Computer Vision and Pattern Recognition, 2009. CVPR 2009. IEEE
+  Conference on}, June 2009, pp. 802--809.
+
 \bibitem{estimedia2015}
 S.~Advani, B.~Smith, Y.~Tanabe, K.~Irick, M.~Cotter, J.~Sampson, and
   V.~Narayanan, ``Visual co-occurrence network: Using context for large-scale
