@@ -1,4 +1,12 @@
 %CNNs
+Convolutional Neural Networks (CNNs) have become extremely popular and being used to solve a variety of image recognition problems. 
+More recent and advanced CNN architectures have become deeper and more complex haing 10 to 20 
+layers of Rectified Linear Units, hundreds of millions of weights, and billions of connections between units.
+The reader is pointed to ~\cite{Bengio2009} for insights on deep architectures in general and ~\cite{DNNNature2015} for CNN-based learning and their recent advances.
+
+An important insight recently unearthed by ~\cite{facenet}, is that the accuracies of CNNs can saturate after a few million images of training data.
+Also the overall efficacy of the image recognition pipeline is contingent upon having a good region proposal scheme that feeds regions of interest (RoIs) into the CNN. 
+A variety of strategies can be used to augment the capabilities of neural networks and we discuss a few below.
 
 \subsection{Visual Attention}
 Visual attention can be described using pixel-level saliency models such as Attention by Information Maximiztion (AIM)~\cite{Bruceb}.
@@ -36,7 +44,7 @@ Once a salient region is detected, a second stage of object classification can b
 %\label{tab:saliencyb}
 %\end{figure*}
 
-\subsection{Spatial Contexts}
+\subsection{Spatial Context}
 While CNNs have been widely used for image category recognition, when it comes to recognizing objects in video streams, spatial context can play a huge role in 
 reducing the workload on these computationally intensive classifiers. As shown in Figure~\ref{fig:viconet}, visual scenes can be represented as a knowledge graph.   
 For example, in ~\cite{estimedia2015}, the authors proposed a Bayesian network called Visual Co-occurrence Network (ViCoNet) to not only improve the performance of their system, but also increase the recognition rates.
