@@ -37,17 +37,26 @@ Once a salient region is detected, a second stage of object classification can b
 \label{tab:saliencya}
 \end{figure}
 
-%%Saliency App 2
-%\begin{figure*}[!htb]
-%\centering
-%\begin{tabular}{@{}c@{} @{}c@{} @{}c@{}}
-%\vspace{-5pt}
-%\includegraphics[width=0.33\linewidth,trim={0 0 0 0},clip]{scott_img.jpg} & \includegraphics[width=0.33\linewidth,trim={0 0 0 0},clip]{scott_sali.jpg} & \includegraphics[width=0.33\linewidth,trim={0 0 0 0},clip]{scott_roi.jpg}\\[\abovecaptionskip]
-%\small(a) Original image & \small (b) Saliency Map & \small (c) Regions of Interest \\
-%\end{tabular}
-%\caption{Saliency.}
-%\label{tab:saliencyb}
-%\end{figure*}
+\subsection{Redundancy}
+A lot of visual scenes exhibit redundancy in some form or the other. 
+For example, in a grocery aisle there are a lot of similar looking products like cereal boxes, detergent bottles, etc. Rather than processing each of these items 
+as independent entities, we can localize similar RoIs, run our classification engine on only one of them and then assign the corresponding label to all of the similar 
+RoIs. Figure~\ref{tab:saliencyb} illustrates this flow where AIM is used to generate initial seed RoIs that are then coupled with SURF keypoint matching 
+to generate a list of RoIs that are similar in structure. 
+
+%Saliency App 2
+\begin{figure*}[!htb]
+\centering
+\begin{tabular}{@{}c@{} @{}c@{} @{}c@{}}
+\vspace{-5pt}
+\includegraphics[width=0.32\linewidth,trim={0 0 0 0},clip]{scott_img.jpg} & \includegraphics[width=0.31\linewidth,trim={0 0 0 0},clip]{scott_sali.jpg} & \includegraphics[width=0.32\linewidth,trim={0 0 0 0},clip]{scott_roi.jpg}\\[\abovecaptionskip]
+\small(a) Original image & \small (b) Saliency Map & \small (c) Thresholded Map \\
+\includegraphics[width=0.32\linewidth,trim={0 0 0 0},clip]{scott_best_roi.jpg} & \includegraphics[width=0.32\linewidth,trim={0 0 0 0},clip]{scott_surf2.jpg} & \includegraphics[width=0.32\linewidth,trim={0 0 0 0},clip]{scott_mask.jpg}\\[\abovecaptionskip]
+\small(a) Best RoI & \small (b) SURF keypoints & \small (c) Regions of Interest \\
+\end{tabular}
+\caption{Saliency and SURF used to identify similar items.}
+\label{tab:saliencyb}
+\end{figure*}
 
 \subsection{Context}
 % Hierarchy of Parts
