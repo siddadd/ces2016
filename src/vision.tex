@@ -41,6 +41,22 @@ Once a salient region is detected, a second stage of object classification can b
 \label{tab:saliencya}
 \end{figure}
 
+Figure~\ref{tab:saliencyb} shows another example of how we can use a combination of saliency and structured features like SURF to product intelligent segmentation of 
+items in a grocery shelf. This is in contrast to other region proposal schemes that tend to work well with homogenous objects like people and cars but struggle to produce 
+good intersection over unions (IoUs) over small and closely placed grocery items.
+
+%Saliency App 2
+\begin{figure}[!htb]
+\centering
+\begin{tabular}{@{\hspace{1em}}l@{} @{\hspace{1em}}l@{}}
+\vspace{-5pt}
+\includegraphics[width=0.45\linewidth,trim={0 0 0 0},clip]{surf_saliency_orig.png} & \includegraphics[width=0.45\linewidth,trim={0 0 0 0},clip]{surf_saliency.png}\\[\abovecaptionskip]
+\small(a) Original image & \small (b) Segmented heatmap\\
+\end{tabular}
+\caption{SURF keypoint clustering used for product segmentation.}
+\label{tab:saliencyb}
+\end{figure}
+
 \subsection{Redundancy}
 A lot of visual scenes exhibit redundancy in some form or the other. 
 For example, in a grocery aisle there are a lot of similar looking products like cereal boxes, detergent bottles, etc. Rather than processing each of these items 
