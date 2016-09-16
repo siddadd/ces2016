@@ -42,8 +42,7 @@ example of this would be buzzing the right motor to indicate a
 rightward motion or the top motor to indicate the person needs to lift
 their hand.
 
-Figure~\ref{tab:whole_system_chris} shows how a person would wear and interface with the asssitive system. Such a system is ideal
-to provide guidance and assistance in a retail type setting. <--- please change this line.
+
 
 %Whole system picture
 \begin{figure}[!htb]
@@ -60,6 +59,9 @@ to provide guidance and assistance in a retail type setting. <--- please change 
 While certain aspects of system use differ across the particular tasks it supports, the modes and mechanisms employed during grocery shopping provide good coverage of typical operations, and we describe them in detail below.
 In the our system these the auditory feedback combined with the haptic feedback from the glove
 to provide the needed assistance to the shopper. 
+
+Figure~\ref{tab:whole_system_chris} shows how a person would wear and interface with the asssitive system. Such a system is ideal
+to provide guidance and assistance in a retail type setting. <--- please change this line.
  
 \subsection{Challenges}
 Creating a truly assistive system with a variety of interfaces presents a series 
@@ -70,14 +72,5 @@ reconciling different camera views to provide correct guidance, and having enoug
 Through various methods these challenges can be solved. To solve the problem of guiding the person through the store, the smart cart could be equipped with various sensors. This could include cameras that not only have RGB information, but even depth and possibly thermal. Also the use of
 localization technologies such as indoor gps, and bluetooth beacons around the store have the ability to track the user and provide the needed level of localization to the system.
 Another challenge that arose came from having two camera views that aren't always in alignment with one another. An example of when is occurs is when shopping and you go to grab a product, you might look away while still reaching in towards your intended product. This poses a challenge to a system giving guidance based on the view from those cameras. One possible solution to this issue would be the addition of sensors to the glasses and the glove. The addition of an IMU and Magnomter to both of the edge compute give ability to correctly give guidance in these cases. An a example how this would work is if the headset camera view indicated the person needed to move right, but the glove camera was pointing straight. The system would be able tell the user to turn just their head to align the two views.
-The biggest challenge that exists in a guidance system is being able to keep up with the real-time demands of the user. With an assistive system, meeting solving this is crucial. In order to do this effectively, the system as a whole must leverge every availble compute power including that available at both the edge devices, the local infastructure in addition to a powerful cloud compute platform. As stated earlier, for our cloud compute device use a high-performance server that is enabled/enhanched with both FPGAs and GPUs. By leverageing custom architecures and exploiting parrallel algorithms we are able to process 1080p at ~50fps. While this may seem like it meets the real-time constratint it doesn't. Since a server needs to be able handle multiple connections at once, just the acclerated back end would handle 50 streams at 1fps. To make up this gap in performace, tricks need to be played at the local and edge compute devices to make this difference imperceivable. Some of the compute that 
-
-
-
-
-
-User movement speed:
-With any system that provides user feedback, being able to keep up with the speed at which the user moves. In a system that is meant to provide assistance and guidance the fluidity of the interface is crucial. The slightest delay in this type of system could lead to a variety of situations such as the user walking into something, missing the intended product, or picking the wrong product. In a task that requires image processing this problem is even more difficult due to the computation requriement of the backend.
-
-
+The biggest challenge that exists in a guidance system is being able to keep up with the real-time demands of the user. With an assistive system, meeting solving this is crucial. In order to do this effectively, the system as a whole must leverge every availble compute power including that available at both the edge devices, the local infastructure in addition to a powerful cloud compute platform. As stated earlier, for our cloud compute device use a high-performance server that is enabled/enhanched with both FPGAs and GPUs. By leverageing custom architecures and exploiting parrallel algorithms we are able to process 1080p at ~50fps. While this may seem like it meets the real-time constratint it doesn't. Since a server needs to be able handle multiple connections at once, just the acclerated back end would handle 50 streams at 1fps. To make up this gap in performance, tricks need to be played at the local and edge compute devices to make this difference imperceivable. Some of the compute that can be done at the front end mainly involve the filtering of data. For instance, a local intfrastructure would be able to run the images being streamed back to the server through one of the saliency algorithms expalined above. Additionally the edge device could use its sensors to only send a frame when the user has moved enough that the scene needs to be recomputed on fully. Additionally once the desired products are found, the local infastructure or edge device would be able to run a computationaly less intense tracking algorithm to be able to continue to guide the user toward the product between communications with a the cloud backend.
 
