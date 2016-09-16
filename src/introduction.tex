@@ -37,27 +37,32 @@ thereby filtering the model space of likely objects to be found.
 In composition, these algorithms can be very powerful. Consider
 searching for an object in an aisle. First, steps such as saliency can
 help you reduce the effort spent examining the floor, empty shelves
-and other parts of an image that don't strongly present as
-objects. Then, by understanding the context of specific grocery aisles
-instead of the entire store, complexity can be further pruned.  For
-example, if milk is in your shopping list, the system can be primed to
-only search for milk when you arrive at the dairy aisle and to
-furthermore limit the number of distinct types of possible objects
-considered during classification to those likely to be in a dairy
-aisle. Such optimizations considerably reduce the computational load
-on the assistive vision system. In conjunction with these algorithmic
-advances, we have developed customized hardware solutions to make
-these operations more power-efficient as well as provide real-time
-feedback to the user.
+and other parts of an image that don't strongly register as potential
+grocery objects. Then, by understanding the context of specific
+grocery aisles instead of the entire store, complexity can be further
+pruned.  For example, if milk is in your shopping list, the system can
+be primed to only search for milk when you arrive at the dairy aisle
+and to furthermore limit the number of distinct types of possible
+objects considered during classification to those likely to be in a
+dairy aisle. Such optimizations considerably reduce the computational
+load on the assistive vision system. In conjunction with these
+algorithmic advances, we have developed customized hardware solutions
+to make these operations more power-efficient as well as provide
+real-time feedback to the user.
 
 %  Consequently, this serves as a good region of interest extractor
 %  for subsequent steps.
 
 
-The rest of this article describes the following set of visual assistive
-functions: (1) Identifying objects in a pantry including misplaced
-items; (2) Identifying other shoppers when navigating in the store or
-when navigating to the stores; (3) Locating packaged objects from the
-grocery shelf and picking them; (4) Assisting in identifying items
-from prepared food sections.
+The rest of this article describes the following set of visual
+assistive functions: (1) Identifying objects in a pantry including
+misplaced items; (2) Identifying other shoppers when navigating in the
+store or when navigating to the stores; (3) Locating packaged objects
+from the grocery shelf and picking them; (4) Assisting in identifying
+items from prepared food sections. 
 
+%For each of these tasks we consider not only the computer vision
+%aspects of the problem, but also the practical embodiment of a
+%complex system spanning wearables, edge, and cloud computing
+%platforms that must solve the last mile issues of a real, usable
+%consumer device.
