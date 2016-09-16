@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
+This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ces2016.aux
 The style file: IEEEtran.bst
@@ -10,7 +10,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: IEEEabrv.bib
 Database file #2: library.bib
 Warning--I didn't find a database entry for "WHOvisuallyimpaired"
-Warning--I didn't find a database entry for "something"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -20,45 +19,45 @@ Warning--empty journal in Bruceb
 Warning--empty year in Bruceb
 
 Done.
-You've used 13 entries,
+You've used 14 entries,
             4024 wiz_defined-function locations,
-            1255 strings with 16620 characters,
-and the built_in function-call counts, 8678 in all, are:
-= -- 652
-> -- 207
+            1256 strings with 16712 characters,
+and the built_in function-call counts, 8977 in all, are:
+= -- 674
+> -- 208
 < -- 57
-+ -- 113
++ -- 114
 - -- 39
-* -- 426
-:= -- 1320
-add.period$ -- 27
-call.type$ -- 13
-change.case$ -- 14
+* -- 433
+:= -- 1372
+add.period$ -- 29
+call.type$ -- 14
+change.case$ -- 16
 chr.to.int$ -- 126
-cite$ -- 17
-duplicate$ -- 658
-empty$ -- 762
+cite$ -- 18
+duplicate$ -- 685
+empty$ -- 794
 format.name$ -- 49
-if$ -- 1989
+if$ -- 2054
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 124
-newline$ -- 66
+int.to.str$ -- 14
+missing$ -- 131
+newline$ -- 71
 num.names$ -- 12
-pop$ -- 314
+pop$ -- 338
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 653
+skip$ -- 676
 stack$ -- 0
-substring$ -- 306
-swap$ -- 489
+substring$ -- 308
+swap$ -- 502
 text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 13
+type$ -- 14
 warning$ -- 4
 while$ -- 36
-width$ -- 15
-write$ -- 141
-(There were 6 warnings)
+width$ -- 16
+write$ -- 150
+(There were 5 warnings)
