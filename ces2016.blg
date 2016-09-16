@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2013)
+This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ces2016.aux
 The style file: IEEEtran.bst
@@ -9,7 +9,8 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: IEEEabrv.bib
 Database file #2: library.bib
-Warning--I didn't find a database entry for "tvlsi2015"
+Warning--I didn't find a database entry for "WHOvisuallyimpaired"
+Warning--I didn't find a database entry for "something"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -21,43 +22,43 @@ Warning--empty year in Bruceb
 Done.
 You've used 13 entries,
             4024 wiz_defined-function locations,
-            1251 strings with 16159 characters,
-and the built_in function-call counts, 7660 in all, are:
-= -- 574
-> -- 163
-< -- 49
-+ -- 92
-- -- 29
-* -- 353
-:= -- 1183
-add.period$ -- 26
+            1255 strings with 16620 characters,
+and the built_in function-call counts, 8678 in all, are:
+= -- 652
+> -- 207
+< -- 57
++ -- 113
+- -- 39
+* -- 426
+:= -- 1320
+add.period$ -- 27
 call.type$ -- 13
 change.case$ -- 14
-chr.to.int$ -- 114
+chr.to.int$ -- 126
 cite$ -- 17
-duplicate$ -- 588
-empty$ -- 678
-format.name$ -- 36
-if$ -- 1738
+duplicate$ -- 658
+empty$ -- 762
+format.name$ -- 49
+if$ -- 1989
 int.to.chr$ -- 0
 int.to.str$ -- 13
-missing$ -- 110
-newline$ -- 68
-num.names$ -- 11
-pop$ -- 293
+missing$ -- 124
+newline$ -- 66
+num.names$ -- 12
+pop$ -- 314
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 584
+skip$ -- 653
 stack$ -- 0
-substring$ -- 278
-swap$ -- 420
-text.length$ -- 11
+substring$ -- 306
+swap$ -- 489
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 5
 type$ -- 13
 warning$ -- 4
-while$ -- 29
+while$ -- 36
 width$ -- 15
-write$ -- 136
-(There were 5 warnings)
+write$ -- 141
+(There were 6 warnings)

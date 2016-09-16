@@ -21,35 +21,11 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{lcd_future}
-Y.~Ishii, ``{The World of Liquid-Crystal Display TVs - Past, Present, and
-  Future},'' \emph{Journal of Display Technology}, vol.~3, no.~4, pp. 351--360,
-  Dec 2007.
-
 \bibitem{iPhone}
 \BIBentryALTinterwordspacing
 {iPhone 6s/6s Plus}. (Date last accessed 29-Jan-2016). [Online]. Available:
   \url{http://www.apple.com/iphone-6s/specs/}
 \BIBentrySTDinterwordspacing
-
-\bibitem{Sinofsky}
-S.~Sinofsky, 2009 Windows 7 Energy Efficiency.
-
-\bibitem{Samsung}
-\BIBentryALTinterwordspacing
-{Samsung}. (Date last accessed 29-Jan-2016). [Online]. Available:
-  \url{http://www.samsung.com/us/video/tvs/}
-\BIBentrySTDinterwordspacing
-
-\bibitem{DATE2013}
-Y.~Xiao, K.~Irick, V.~Narayanan, D.~Shin, and N.~Chang, ``{Saliency Aware
-  Display Power Management},'' in \emph{Design, Automation Test in Europe
-  Conference Exhibition (DATE), 2013}, March 2013, pp. 1203--1208.
-
-\bibitem{Peters2007}
-R.~Peters and L.~Itti, ``{Applying computational tools to predict gaze
-  direction in interactive visual environments},'' \emph{ACM Trans. on Applied
-  Perception}, 2007.
 
 \bibitem{Bengio2009}
 Y.~Bengio, ``{Learning Deep Architectures for AI}.''\hskip 1em plus 0.5em minus
@@ -84,5 +60,33 @@ S.~Advani, B.~Smith, Y.~Tanabe, K.~Irick, M.~Cotter, J.~Sampson, and
 B.~E. Stein, T.~R. Stanford, and B.~A. Rowland, ``{The Neural Basis of
   Multisensory Integration in the Midbrain: its Organization and Maturation},''
   \emph{Hearing Research}, vol. 258, no.~1, pp. 4--15, 2009.
+
+\bibitem{fpl2015}
+S.~Advani, Y.~Tanabe, K.~Irick, J.~Sampson, and V.~Narayanan, ``A scalable
+  architecture for multi-class visual object detection,'' in \emph{Field
+  Programmable Logic and Applications (FPL), 2015 25th International Conference
+  on}, Sept 2015, pp. 1--8.
+
+\bibitem{truenorth}
+F.~Akopyan \emph{et~al.}, ``Truenorth: Design and tool flow of a 65 mw 1
+  million neuron programmable neurosynaptic chip,'' \emph{IEEE Transactions on
+  Computer-Aided Design of Integrated Circuits and Systems}, vol.~34, no.~10,
+  pp. 1537--1557, Oct 2015.
+
+\bibitem{upitt}
+J.~A. Carpenter, Y.~Fang, C.~N. Gnegy, D.~M. Chiarulli, and S.~P. Levitan, ``An
+  image processing pipeline using coupled oscillators,'' in \emph{2014 14th
+  International Workshop on Cellular Nanoscale Networks and their Applications
+  (CNNA)}, July 2014, pp. 1--2.
+
+\bibitem{wtsai}
+W.~Y. Tsai \emph{et~al.}, ``Enabling new computation paradigms with hyperfet -
+  an emerging device,'' \emph{IEEE Transactions on Multi-Scale Computing
+  Systems}, vol.~2, no.~1, pp. 30--48, Jan 2016.
+
+\bibitem{redeye}
+R.~LiKamWa, Y.~Hou, J.~Gao, M.~Polansky, and L.~Zhong, ``Redeye: Analog convnet
+  image sensor architecture for continuous mobile vision,'' in
+  \emph{International Symposium on Computer Architecture}, 2016.
 
 \end{thebibliography}
