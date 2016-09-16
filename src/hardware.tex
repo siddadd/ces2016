@@ -100,8 +100,26 @@ while Figure~\ref{tab:tn} (c) shows the thresholded detections when evaluated on
 \subsection{Emerging Devices}
 In addition to advances in novel architectures for vision, there are
 also new emerging technologies on the horizon that can potentially
-offer enable new visual computing paradigms. One such promising
-technology is weakly-coupled nano-oscillators. There is an existing
+offer new visual computing paradigms. 
+One such promising technology involves harnessing the ``analog'' 
+dynamics of coupled oscillators which represents a radical departure 
+from the conventional 1 and 0 based ``digital'' computing. 
+
+Essentially, such oscillators are highly miniaturized, very low-power electrical devices, built using new functional materials such as vanadium dioxide ($VO{_2}$), 
+that output a periodic electrical signal (voltage, current). 
+
+Coupled oscillator based computing entails the interconnection 
+or coupling of a number of such oscillators; 
+and the computation is performed in the way 
+such highly-interconnected systems of 
+oscillators synchronize or ``talk'' to each other. 
+This alternate computing scheme is 
+being particularly explored as a transformative solution for 
+application in artificial vision systems 
+that would be used in technologies of the future such as autonomous vehicles, 
+augmented reality.
+
+There is an existing
 body of work that shows how the analog functions of weakly-coupled
 oscillators can be used to provide distance-like metrics as a new
 analog primitive~\cite{upitt} and how sets of oscillators can implement
@@ -122,7 +140,16 @@ benefits of moving early computation to the sensor chip~\cite{redeye},
 thereby limiting the losses incurred in moving data from the sensing
 to computing portions of wearable and mobile systems. Fully exploiting
 the potential of these nano-oscillators will, however, require
-substantial remapping efforts for existing computations. Our group has
+substantial remapping efforts for existing computations. 
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\linewidth,trim={0 0 0 0},clip]{oscillators.png}
+\caption{Edge detection using coupled oscillators}
+\label{fig:osc}
+\end{figure} 
+
+Our group has
 mapped a number of image pre-processing primitives onto
-coupled-oscillator arrays, and efforts are underway to map larger
+coupled-oscillator arrays as shown in Figure~\ref{fig:osc}, and efforts are underway to map larger
 computations, such as HOG.
