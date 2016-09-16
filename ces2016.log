@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  16 SEP 2016 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  16 SEP 2016 16:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -681,7 +681,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: ./figs/chris_system_whole.jpg Graphic file (type jpg)
 
 <use ./figs/chris_system_whole.jpg>
-Package pdftex.def Info: ./figs/chris_system_whole.jpg used on input line 53.
+Package pdftex.def Info: ./figs/chris_system_whole.jpg used on input line 52.
 (pdftex.def)             Requested size: 226.79846pt x 302.37895pt.
  [2 <./figs/chris_system_whole.jpg>])
 (./src/vision.tex <./figs/mp1a.jpg, id=24, 335.70581pt x 152.2283pt>
@@ -917,7 +917,7 @@ Here is how much of TeX's memory you used:
  17097 multiletter control sequences out of 15000+600000
  41887 words of font info for 80 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 54i,12n,73p,1044b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,12n,73p,1690b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
@@ -927,7 +927,7 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
 16/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on ces2016.pdf (7 pages, 7054661 bytes).
+Output written on ces2016.pdf (7 pages, 7054798 bytes).
 PDF statistics:
  155 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
