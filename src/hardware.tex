@@ -19,17 +19,24 @@ performance and energy gains. We have developed FPGA-based solutions
 for these sub-tasks, although our designs could also translate to ASIC
 implementations.
 
-// Siddharth is writing this - will insert later
+In ~\cite{fpl2015}, the authors proposed a scalable solution for object 
+detection using structured features - Histogram of Oriented Gradients.
+While these features are very lightweight in terms of hardware resources, 
+the high miss-rate is cause for concern. On the other hand, a deep CNN 
+would have better accuracy, but would struggle to meet stringent power 
+and area constraints when being deployed onto a wearable platform. Our 
+current work is focussed on reducing the detection threshold and using 
+these detection outputs as region proposals to a shallow CNN. 
 Figure~\ref{fig:customchips} shows the output of our structured HOG
-custom hardware alongside a combined HOG-CNN approach. It shows ...
+custom hardware alongside a combined HOG-CNN approach.
 
 %Coupling structural with learned features
 \begin{figure*}[!htb]
 \centering
-\begin{tabular}{@{}c@{} @{}c@{} @{}c@{} @{}c@{}}
+\begin{tabular}{@{}c@{} @{\hspace{1em}}c@{} @{\hspace{1em}}c@{} @{\hspace{1em}}c@{}}
 \vspace{-5pt}
-\includegraphics[width=0.25\linewidth,trim={0 0 0 0},clip]{MissingFigure.pdf} & \includegraphics[width=0.25\linewidth,trim={0 0 0 0},clip]{MissingFigure.pdf} & \includegraphics[width=0.25\linewidth,trim={0 0 0 0},clip]{MissingFigure.pdf} & \includegraphics[width=0.25\linewidth,trim={0 0 0 0},clip]{MissingFigure.pdf}\\[\abovecaptionskip]
-\small(a) Original image & \small (b) HOG output & \small (c) Reduced threshold HOG output & \small (d) HOG-CNN output \\
+\includegraphics[width=0.22\linewidth,trim={0 0 0 0},clip]{oc_image_00000596_0.png} & \includegraphics[width=0.22\linewidth,trim={0 0 0 0},clip]{hwpedro_122000_image_00000596_0.png} & \includegraphics[width=0.22\linewidth,trim={0 0 0 0},clip]{hwpedro_61000_image_00000596_0.png} & \includegraphics[width=0.22\linewidth,trim={0 0 0 0},clip]{MissingFigure.pdf}\\[\abovecaptionskip]
+\small(a) OpenCV output & \small (b) Hardware HOG output ~\cite{fpl2015} & \small (c) Reduced threshold & \small (d) HOG-CNN output \\
 \end{tabular}
 \caption{Coupling structured features with learned features}
 \label{fig:customchips}
@@ -85,11 +92,11 @@ offer enable new visual computing paradigms. One such promising
 technology is weakly-coupled nano-oscillators. There is an existing
 body of work that shows how the analog functions of weakly-coupled
 oscillators can be used to provide distance-like metrics as a new
-analog primitive~\cite{} and how sets of oscillators can implement
+analog primitive~\cite{upitt} and how sets of oscillators can implement
 analog convolutions and other useful high-level computational
 primitives. Recent advances in materials and device technologies
 offers the promise of nano-scale oscillators, such as hyperFET-based
-oscillators~\cite{}, that can implement these functions in extremely
+oscillators~\cite{wtsai}, that can implement these functions in extremely
 small area and power budgets.
 
 Nano-oscillators are particularly intriguing for wearable vision
@@ -99,7 +106,7 @@ little power to be directly integrated into the image sensing
 chips. In addition to the benefits from offering higher-level analog
 primitives that improve computational efficiency relative over digital
 calculations, recent work has highlighted the large system-level
-benefits of moving early computation to the sensor chip~\cte{redeye},
+benefits of moving early computation to the sensor chip~\cite{redeye},
 thereby limiting the losses incurred in moving data from the sensing
 to computing portions of wearable and mobile systems. Fully exploiting
 the potential of these nano-oscillators will, however, require
