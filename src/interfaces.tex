@@ -1,19 +1,49 @@
 ~\cite{something}
-One of the most important aspects of any technology is how a human interacts with it. Having an intuitive, simple, and functional interface can often be the difference between a successful device and one which isn't. This importance on a interface is even more important when trying to help someone with an impairment. Not only does the interface have to be all the things mentioned above, but it also has to be robust for different environments. In the case of assisting a person with visual impairment this means being able to handle cases which people without visual impairment handle without even realizing they do. Such a scenario would be when reaching for a product if you momentarily move your head in a different direction.
+One of the most important aspects of any technology is how a human interacts with it.
+Having an intuitive, simple, and functional interface can often be the difference between
+a successful device and one which isn't. This importance on a interface is even more important
+when trying to help someone with an impairment. Not only does the interface have to be all
+the things mentioned above, but it also has to be robust for different environments. In the
+case of assisting a person with visual impairment this means being able to handle cases
+which people without visual impairment handle without even realizing they do. Such a scenario
+would be when reaching for a product if you momentarily move your head in a different direction.
 
 Our visual assistive system consists of several interacting components: 
+
 \begin{itemize}
-\item One of the devices that we use is a pair of smart glasses. The smart
-glasses have both a camera and a built in headset, along with
-networking capability. These built in glasses provide to our system a
-point of view of the person wearing them which is crucial when need to
-guide someone to a product. Also because they are worn like normal
-sunglasses, they aren't intrusive which is something that was really
-important to the users who tested our system.
+\item One of the devices that we use an off the shelf androdi powered smart glasses. 
+The smart glasses have both a camera and a built in headset along with
+networking capability. 
 
 \item We use a specially designed prototype glove that has been
 modified to have both a camera attached to it, as well set of
-vibration motors. This camera that is on the glove allows the system
+vibration motors. 
+
+\item Smart Cart. A shopping cart that can be equiped with a moderate level of computer
+and a variety of sensors that would be provided by the retail location.
+
+\item High-performance server machine with both GPU and FPGA integration running
+accelerating compute with custom algorithms and architectures.
+
+\end{itemize}
+
+\subsection{Interfaces}
+For our assistive technology we employ two main modes of providing this feedback and guidance to the user. these modes are auditory feedback and tactile feedback. To provide this feedback to the users we use glove and glass listed above.
+
+\subsubsection{Smart Glasses}
+The off the shelf smart glasses provide the system with a camera in the viewpoint
+of the persons head as well as network connectivity and speakers for audio feedback.
+In the assistive system the glasses are mainly used to guide the person at the aisle level
+to be infront of their intended/desired product. The commands such as "left, right, forward, back"
+provide the direction.
+'''
+Also because they are worn like normal
+sunglasses, they aren't intrusive which is something that was really
+important to the users who tested our system.
+'''
+
+\subsubsection{Custom Glove}
+This camera that is on the glove allows the system
 to have the view point of where the person is reaching. This view
 point may be different from that of the camera mounted on the headset.
 The vibration motors attached to the glove allow the system to provide
@@ -23,54 +53,24 @@ example of this would be buzzing the right motor to indicate a
 rightward motion or the top motor to indicate the person needs to lift
 their hand.
 
-
-\item EDGE COMPUTING (shopping cart / tablet / etc -- need to make consistent across all tasks in introduction)
-
-\item FPGA and GPU enabled server class machine. Since the task of
-computer vision is computationally intensive along with the added
-constraint of real-time processing.
-
-\end{itemize}
-
-Use of Other Sensors:
-    Indoor GPS
-        can be used for positioning to reduce to computation required for localization
-    IMU / Magnomter:
-        Used for diffing the pose of hand versus the head helping to address the challenge of fine grain control.
-
-Challenges.
-    Alignment:
-        While 
-
-    User movement speed:
-        With any system that provides user feedback, being able to keep up with the speed at which the user moves. In a system that is meant to provide assistance and guidance the fluidity of the interface is crucial. The slightest delay in this type of system could lead to a variety of situations such as the user walking into something, missing the intended product, or picking the wrong product. In a task that requires image processing this problem is even more difficult due to the computation requriement of the backend.
-
-\subsection{Interfaces}
-One of the most important aspects of any technology is how a human interacts with it. Having an intuitive, simple, and functional interface can often be the difference between a successful device and one which isn't~\cite{iPhone}. This importance on a interface is even more important when trying to help someone with an impairment. Not only does the interface have to be all the things mentioned above, but it also has to be robust for different environments. In the case of assisting a person with visual impairment this means being able to handle cases which people without visual impairment handle without even realizing they do. Such a scenario would be when reaching for a product if you momentarily move your head in a different direction.
-
-For our assistive technology we employ two main modes of providing this feedback and guidance to the user. these modes are auditory feedback and tactile feedback. To provide this feedback to the users we use two main devices.
+Since the task of computer vision is computationally intensive along
+with the added constraint of real-time processing exploiting every
+possible speed up of the algorithms run is critical to make the system truly asssistive.
 
 \subsection{Using the System}
 While certain aspects of system use differ across the particular tasks it supports, the modes and mechanisms employed during grocery shopping provide good coverage of typical operations, and we describe them in detail below.
-
-One of the devices that we use is a pair of smart glasses. The smart glasses have both a camera and a built in headset, along with networking capability. These built in glasses provide to our system a point of view of the person wearing them which is crucial when need to guide someone to a product. Also because they are worn like normal sunglasses, they aren't intrusive which is something that was really important to the users who tested our system. The headset on the smart glasses allows for the delivery of the auditory feedback.
-
 In the our system these the auditory feedback combined with the haptic feedback from the glove
+to provide the needed assistance to the shopper. 
 
-
-
-
+\subsection{Challeges}
 Use of Other Sensors:
     Indoor GPS
         can be used for positioning to reduce to computation required for localization
     IMU / Magnomter:
         Used for diffing the pose of hand versus the head helping to address the challenge of fine grain control.
-
-
 Challenges.
     Alignment:
         While 
-
     User movement speed:
         With any system that provides user feedback, being able to keep up with the speed at which the user moves. In a system that is meant to provide assistance and guidance the fluidity of the interface is crucial. The slightest delay in this type of system could lead to a variety of situations such as the user walking into something, missing the intended product, or picking the wrong product. In a task that requires image processing this problem is even more difficult due to the computation requriement of the backend.
 
