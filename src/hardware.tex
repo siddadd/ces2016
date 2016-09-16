@@ -27,8 +27,11 @@ would have better accuracy, but would struggle to meet stringent power
 and area constraints when being deployed onto a wearable platform. Our 
 current work is focussed on reducing the detection threshold and using 
 these detection outputs as region proposals to a shallow CNN. 
-Figure~\ref{fig:customchips} shows the output of our structured HOG
-custom hardware alongside a combined HOG-CNN approach.
+We use three convolutional (+ pooling) layers and three fully connected layers in our CNN. 
+The training images were of size 64$\times$128 with around 3000 positives and 6000 negatives.
+and we used stochastic gradient descent with a step-down approach to the learning rate. 
+Figure~\ref{fig:customchips}(d) shows the output of our structured HOG
+custom hardware coupled with our shallow CNN.
 
 %Coupling structural with learned features
 \begin{figure*}[!htb]
@@ -38,7 +41,7 @@ custom hardware alongside a combined HOG-CNN approach.
 \includegraphics[width=0.22\linewidth,trim={0 0 0 0},clip]{oc_image_00000596_0.png} & \includegraphics[width=0.22\linewidth,trim={0 0 0 0},clip]{hwpedro_122000_image_00000596_0.png} & \includegraphics[width=0.22\linewidth,trim={0 0 0 0},clip]{hwpedro_61000_image_00000596_0.png} & \includegraphics[width=0.22\linewidth,trim={0 0 0 0},clip]{cnn_image_00000596_0.png}\\[\abovecaptionskip]
 \small(a) OpenCV output & \small (b) Hardware HOG output ~\cite{fpl2015} & \small (c) Reduced threshold & \small (d) HOG-CNN output \\
 \end{tabular}
-\caption{Coupling structured features with learned features}
+\caption{Coupling structured features with learned features. Image obtained from ~\cite{ethz}.}
 \label{fig:customchips}
 \end{figure*}
 
@@ -68,9 +71,18 @@ acceleration efforts have supported real-time performance levels and
 greatly increased power efficiency over traditional software
 approaches, moving to these new brain-like architectures offers the
 potential to push computation even closer to the sensing platform by
-easily operating within wearable power budgets. Figure~\ref{tab:tn}
-shows the success of one such mapping effort, depicting the output of
-the HOG-based person detection approach when modeled for TrueNorth.
+easily operating within wearable power budgets. 
+
+For example, extracting a HOG-like feature vector 
+for a given 64$\times$128 Region of Interest (ROI) would require 23 cores 
+consuming around 62~mW of power. To evaluate the fidelity of this feature, 
+we trained an SVM using the INRIA dataset~\cite{inria} and ran evaluations. 
+Figure~\ref{tab:tn} (b)
+%shows the success of one such mapping effort, 
+depicts the dot product output between the trained model and the TrueNorth HOG feature model, 
+while Figure~\ref{tab:tn} (c) shows the thresholded detections when evaluated on a test image. 
+%Expected power consumption of extracting a HOG-like feature vector 
+%for a given 64\times128 Region of Interest (ROI) would be around 62~mW.
 
 %TN
 \begin{figure*}[!htb]
@@ -79,9 +91,9 @@ the HOG-based person detection approach when modeled for TrueNorth.
 \begin{tabular}{@{}c@{} @{\hspace{2em}}c@{} @{\hspace{2em}}c@{}}
 \vspace{-5pt}
 \includegraphics[width=0.29\linewidth,trim={0 0 0 0},clip]{tn_input_46.png} & \includegraphics[width=0.32\linewidth,trim={0 0 0 0},clip]{tn_dotp_46.jpg} & \includegraphics[width=0.29\linewidth,trim={0 0 0 0},clip]{tn_detection_46.jpg}\\[\abovecaptionskip]
-\small(a) Original image & \small (b) Dot Product & \small (c) Detections \\
+\small(a) OpenCV output & \small (b) TrueNorth Dot Product & \small (c) TrueNorth Detections \\
 \end{tabular}
-\caption{Mapping HOG to True North}
+\caption{Mapping HOG to True North. Image obtained from ~\cite{inria}.}
 \label{tab:tn}
 \end{figure*}
 
