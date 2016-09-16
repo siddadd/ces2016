@@ -5,19 +5,19 @@ For example, consider an autonomous vehicle driving through a busy street. The d
 impeding obstacle or a red signal. More importantly this decision will be needed to made in a small amount of time and may be based upon multiple noisy sensory inputs.
  
 %CNNs
-Convolutional Neural Networks (CNNs) have become extremely popular and being used to solve a variety of image recognition problems. 
-More recent and advanced CNN architectures have become deeper and more complex haing 10 to 20 
+Convolutional Neural Networks (CNNs) have become extremely popular and being used to solve a variety of image recognition and computer vision tasks. 
+More recent and advanced CNN architectures have become deeper and more complex having 10 to 20 
 layers of Rectified Linear Units, hundreds of millions of weights, and billions of connections between units.
 The reader is pointed to ~\cite{Bengio2009} for insights on deep architectures in general and ~\cite{DNNNature2015} for CNN-based learning and their recent advances.
 
 While CNNs are an important thrust of research, they tend to be computationally expensive and deploying them on mobile platforms results in huge memory overheads. 
 Another important insight recently unearthed by ~\cite{facenet}, is that the accuracies of CNNs can saturate after a few million images of training data.
 Also the overall efficacy of the image recognition pipeline is contingent upon having a good region proposal scheme that feeds regions of interest (RoIs) into the CNN. 
-Considering these challenges, a variety of strategies can be used to augment the capabilities of neural networks and we discuss a few below.
+Considering these challenges, a variety of strategies can be used to augment the capabilities of neural networks and we outline a few below.
 
 \subsection{Visual Attention}
 Humans process and respond to only certain streams of visual information depending upon the task at hand. 
-From a systems perspective, visual attention can be used as an efficient mechanism to prioritize visual processing.  
+From a systems perspective, visual attention can be used as an efficient mechanism to prioritize data processing.  
 Pixel-level saliency models such as Attention by Information Maximiztion (AIM)~\cite{Bruceb} can be used in 
 automatic household pantry organization and maintenance, particularly 
 as part of assist systems for the visually impaired. Computationally, AIM determines visual salience based on the amount of information present in 
@@ -51,7 +51,7 @@ Speeded Up Robust Features (SURF) keypoint matching to generate a list of RoIs t
 %Saliency App 2
 \begin{figure*}[!htb]
 \centering
-\begin{tabular}{@{}c@{} @{}c@{} @{}c@{}}
+\begin{tabular}{@{}c@{} @{\hspace{1em}}c@{} @{\hspace{1em}}c@{}}
 \vspace{-5pt}
 \includegraphics[width=0.32\linewidth,trim={0 0 0 0},clip]{scott_img.jpg} & \includegraphics[width=0.31\linewidth,trim={0 0 0 0},clip]{scott_sali.jpg} & \includegraphics[width=0.32\linewidth,trim={0 0 0 0},clip]{scott_roi.jpg}\\[\abovecaptionskip]
 \small(a) Original image & \small (b) Saliency Map & \small (c) Thresholded Map \\
@@ -72,7 +72,7 @@ When it comes to recognizing objects in video streams, spatial context can play 
 reducing the workload on computationally intensive models such as CNNs. 
 For example, in ~\cite{estimedia2015}, the authors proposed a Bayesian network called Visual Co-occurrence Network (ViCoNet) where objects were represented as nodes and 
 edges represented spatial relations between them. This network was then used to improve the performance of their system as well as the recognition rates.
-Figure~\ref{fig:viconet} shows an example of such a graph, which could very well represent a fresh-fruit section of a grocery shop.   
+Figure~\ref{fig:viconet} shows an example of such a graph, which could very well represent a fresh-fruit section of a grocery shop. 
 
 \begin{figure}[!htb]
 \centering

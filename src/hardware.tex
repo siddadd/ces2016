@@ -1,54 +1,109 @@
-Since the invention of the first television, the display system has manifested into a critical human-computer-interface 
-capable of bringing vivid and abundant visual information to users. 
-As technology evolved, flat panel LCD display systems were invented and are now 
-widely used in various multimedia systems, ranging from large screen home theatre systems 
-to personal laptops and mobile devices. As projected in ~\cite{lcd_future}, LCD TVs are becoming progressively bigger
-in size every year, with customers demanding powerful visual experiences as video technology evolves. As the smartphone industry
-explores newer dimensions of innovation, there is an increasing demand for larger screens in this multimedia category too~\cite{iPhone}.
+Even with significant investments in algorithm development and
+selection, the computational costs of running a visual assist system
+on traditional computing platforms can still be significant and a
+potential impediment to practical deployment. In this section we
+describe efforts to implement custom designs for assistive vision,
+leverage new, non-traditional architectures, and forecast the impact
+of emerging technologies that can further improve the efficiency and
+effectiveness of visual assist systems from the wearable front ends
+and mobile edge computing platforms through the cloud-hosted back-ends
+and databases.
 
-The LCD panel in a common LCD display system will not emit light by itself. Therefore, a backlight panel and a light-diffusing 
-component are used under the LCD panel as a source of lighting in the system.
-Currently, there are two kinds of lighting sources employed for the backlight panel. 
-An older method uses cold cathode fluorescent lamps (CCFL); while a more recent one utilizes 
-light-emitting diodes (LEDs) since LEDs can offer greater dynamic contrast, wider color gamut and 
-less power consumption. Although this new backlight technology can provide better power efficiency, 
-it needs to be pointed out that the backlight panel still remains the largest portion of the entire 
-system power consumption ~\cite{Sinofsky}. With the increasing demand for larger screens, 
-optimizing and enhancing the power efficiency of the LCD display system, 
-especially televisions ~\cite{Samsung}, is thus attracting continuing research efforts.
+\subsection{Custom Chips}
+While the computational needs of the computer vision algorithms we
+employ are substantial, they are also heavily structured and ammenable
+to acceleration. The computation and memory management for sub-tasks,
+such as person-detection or recognizing sets of replicated objects on
+grocery shelves, can be heavily customized to yield both large
+performance and energy gains. We have developed FPGA-based solutions
+for these sub-tasks, although our designs could also translate to ASIC
+implementations.
 
-While approximate computing is becoming a powerful paradigm to save energy in the vision space~\cite{tvlsi2015}, 
-another promising way to solve the power problem specific to LCD panels is to dim the LED backlight. Many different methods 
-have been proposed in the same vein. Active dimming approaches adjust the luminance level of the backlight 
-based on pixel information such as contrast, color, or brightness. Passive dimming methods modify the 
-luminance level by monitoring user attention with a camera or sensors. 
-The backlight is dimmed when users are away and restored to full level when users are in front of the display.
+// Siddharth is writing this - will insert later
+Figure~\ref{fig:customchips} shows the output of our structured HOG
+custom hardware alongside a combined HOG-CNN approach. It shows ...
 
-In ~\cite{DATE2013}, an active dimming strategy is proposed, where visual saliency 
-is used to adaptively change the luminance level of the backlight panel at a zone granularity. Most objects of interest
-have distinct features that stand out in contrast to their background. 
-~\cite{DATE2013} used three feature channels - \emph{intensity}, \emph{color} and \emph{orientation} - for locating salient or 
-interesting objects/regions in the scene. These low-level features, when applied to images, 
-perform extremely well, as was demonstrated in ~\cite{DATE2013}. However, due to the static nature of these 
-channels, the system, when operating on a video stream, is constrained in that it fails to behave 
-like a person who can focus attention on new objects entering the frame, or moving objects across a series of frames. 
-To overcome these handicaps, we extend ~\cite{DATE2013} with the following contributions:
-\begin{itemize}
-\item
-LCD-based devices these days invariably have streaming video applications running on them and consume more power than when a static image is being observed. 
-As highlighted in ~\cite{Peters2007}, two additional processing channels, \emph{motion} and \emph{flicker} are effective in finding salient regions 
-in a temporal environment. We thus incorporate these two channels into ~\cite{DATE2013} to account for dynamic occurrences 
-across a stream of video frames.
-\item
-We then highlight the impact of these changes on user experience. 
-Since the original system settings in ~\cite{DATE2013} introduce a \emph{shimmer} (discussed later) in the final compensated video, 
-new dimming and compensation coefficients are used. A movement constraint for salient zones between two 
-continuous frames is also adopted for preserving video quality.
-Using these new compensation coefficients, verification of our system is undertaken with 29 different videos as part of a user perception evaluation test.
-\item 
-To address system constraints such as power, performance and resource tradeoffs,
-this paper adopts a generic field-programmable gate array (FPGA) channel architecture. 
-On average, a \textbf{50\%} power saving can be achieved with our extended system while maintaining real-time constraints. 
-\end{itemize}
-The organization of the rest of this paper is as follows: Section~\ref{sec:related} highlights related work on bio-inspired systems in general and various LED power saving schemes in specific; Section~\ref{sec:saliency} introduces Saliency, the adopted biological attention model, in detail; the LED backlight system and its power model is outlined in Section~\ref{sec:led}; Section~\ref{sec:sysarch} shows the design and implementation details of the proposed power management system; all the experimental results are provided in Section~\ref{sec:results}; finally we conclude the paper in Section~\ref{sec:conclusion}.
+%Coupling structural with learned features
+\begin{figure*}[!htb]
+\centering
+\begin{tabular}{@{}c@{} @{}c@{} @{}c@{} @{}c@{}}
+\vspace{-5pt}
+\includegraphics[width=0.25\linewidth,trim={0 0 0 0},clip]{MissingFigure.pdf} & \includegraphics[width=0.25\linewidth,trim={0 0 0 0},clip]{MissingFigure.pdf} & \includegraphics[width=0.25\linewidth,trim={0 0 0 0},clip]{MissingFigure.pdf} & \includegraphics[width=0.25\linewidth,trim={0 0 0 0},clip]{MissingFigure.pdf}\\[\abovecaptionskip]
+\small(a) Original image & \small (b) HOG output & \small (c) Reduced threshold HOG output & \small (d) HOG-CNN output \\
+\end{tabular}
+\caption{Coupling structured features with learned features}
+\label{fig:customchips}
+\end{figure*}
 
+\subsection{Brain-like Architectures}
+The increasing prevalence of brain-inspired algorithms, such as
+saliency, and the dramatic rise in the use and utility of machine
+learning workloads has inspired research into architectures that more
+directly embody brain-like functionality. These new architectuures,
+such as IBM's TrueNorth~\cite{truenorth} completely abandon the
+traditional, centralized von-Neumann architectures of general purpose
+computing for distributed, neuro-inspired computation models. While
+moving tasks to these new brain-like architectures generally requires
+significant rethinking and re-expression of the existing codebases,
+for tasks that were already modeling neural networks, such as many
+machine learning workloads, the impacts can be both rapid and
+profound.
+
+IBM's TrueNorth chip is an architypical example of this new class of
+brain-like architectures. It consists of 4096 neurosynaptic cores
+arranged in a 2-D array occupying 4.3 ${cm^2}$ of area in a 28~nm low
+power CMOS process. A key advantage of this chip is that it consumes
+merely 65~mW of power while running a typical computer vision
+application~\cite{truenorth}. Having accelerated some of the key
+computer vision models using custom fabrics like FPGAs and GPUs, we
+are now looking to map them onto TrueNorth. While our FPGA and GPU
+acceleration efforts have supported real-time performance levels and
+greatly increased power efficiency over traditional software
+approaches, moving to these new brain-like architectures offers the
+potential to push computation even closer to the sensing platform by
+easily operating within wearable power budgets. Figure~\ref{tab:tn}
+shows the success of one such mapping effort, depicting the output of
+the HOG-based person detection approach when modeled for TrueNorth.
+
+%TN
+\begin{figure*}[!htb]
+\centering
+%\def\arraystretch{1.5} %
+\begin{tabular}{@{}c@{} @{\hspace{2em}}c@{} @{\hspace{2em}}c@{}}
+\vspace{-5pt}
+\includegraphics[width=0.29\linewidth,trim={0 0 0 0},clip]{tn_input_46.png} & \includegraphics[width=0.32\linewidth,trim={0 0 0 0},clip]{tn_dotp_46.jpg} & \includegraphics[width=0.29\linewidth,trim={0 0 0 0},clip]{tn_detection_46.jpg}\\[\abovecaptionskip]
+\small(a) Original image & \small (b) Dot Product & \small (c) Detections \\
+\end{tabular}
+\caption{Mapping HOG to True North}
+\label{tab:tn}
+\end{figure*}
+
+\subsection{Emerging Devices}
+In addition to advances in novel architectures for vision, there are
+also new emerging technologies on the horizon that can potentially
+offer enable new visual computing paradigms. One such promising
+technology is weakly-coupled nano-oscillators. There is an existing
+body of work that shows how the analog functions of weakly-coupled
+oscillators can be used to provide distance-like metrics as a new
+analog primitive~\cite{} and how sets of oscillators can implement
+analog convolutions and other useful high-level computational
+primitives. Recent advances in materials and device technologies
+offers the promise of nano-scale oscillators, such as hyperFET-based
+oscillators~\cite{}, that can implement these functions in extremely
+small area and power budgets.
+
+Nano-oscillators are particularly intriguing for wearable vision
+applications. Early explorations indicate that arrays of
+hyperFET-based oscillators are small enough and consume sufficiently
+little power to be directly integrated into the image sensing
+chips. In addition to the benefits from offering higher-level analog
+primitives that improve computational efficiency relative over digital
+calculations, recent work has highlighted the large system-level
+benefits of moving early computation to the sensor chip~\cte{redeye},
+thereby limiting the losses incurred in moving data from the sensing
+to computing portions of wearable and mobile systems. Fully exploiting
+the potential of these nano-oscillators will, however, require
+substantial remapping efforts for existing computations. Our group has
+mapped a number of image pre-processing primitives onto
+coupled-oscillator arrays, and efforts are underway to map larger
+computations, such as HOG.
