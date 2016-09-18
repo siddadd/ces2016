@@ -5,7 +5,7 @@ potential impediment to practical deployment. In this section we
 describe efforts to implement custom designs for assistive vision,
 leverage new, non-traditional architectures, and forecast the impact
 of emerging technologies that can further improve the efficiency and
-effectiveness of visual assist systems from the wearable front ends
+effectiveness of visual assist systems from the wearable front-ends
 and mobile edge computing platforms through the cloud-hosted back-ends
 and databases.
 
@@ -41,7 +41,7 @@ custom hardware coupled with our shallow CNN.
 \includegraphics[width=0.22\linewidth,trim={0 0 0 0},clip]{oc_image_00000596_0.png} & \includegraphics[width=0.22\linewidth,trim={0 0 0 0},clip]{hwpedro_122000_image_00000596_0.png} & \includegraphics[width=0.22\linewidth,trim={0 0 0 0},clip]{hwpedro_61000_image_00000596_0.png} & \includegraphics[width=0.22\linewidth,trim={0 0 0 0},clip]{cnn_image_00000596_0.png}\\[\abovecaptionskip]
 \small(a) OpenCV output & \small (b) Hardware HOG output ~\cite{fpl2015} & \small (c) Reduced threshold & \small (d) HOG-CNN output \\
 \end{tabular}
-\caption{Coupling structured features with learned features. Image obtained from ~\cite{ethz}.}
+\caption{Coupling structured features with learned features. Input image obtained from ~\cite{ethz}.}
 \label{fig:customchips}
 \end{figure*}
 
@@ -74,7 +74,7 @@ potential to push computation even closer to the sensing platform by
 easily operating within wearable power budgets. 
 
 For example, extracting a HOG-like feature vector 
-for a given 64$\times$128 Region of Interest (ROI) would require 23 cores 
+for a given 64$\times$128 RoI would require 23 cores 
 consuming around 62~mW of power. To evaluate the fidelity of this feature, 
 we trained an SVM using the INRIA dataset~\cite{inria} and ran evaluations. 
 Figure~\ref{tab:tn} (b)
@@ -83,6 +83,9 @@ depicts the dot product output between the trained model and the TrueNorth HOG f
 while Figure~\ref{tab:tn} (c) shows the thresholded detections when evaluated on a test image. 
 %Expected power consumption of extracting a HOG-like feature vector 
 %for a given 64\times128 Region of Interest (ROI) would be around 62~mW.
+These brain-like architectures can eventually help move computation closer to the sensor when being 
+used in constrained environments where cloud support may not be available. Also their low power 
+consumption make them viable solution for camera-enabled wearable technologies.
 
 %TN
 \begin{figure*}[!htb]
@@ -93,7 +96,7 @@ while Figure~\ref{tab:tn} (c) shows the thresholded detections when evaluated on
 \includegraphics[width=0.29\linewidth,trim={0 0 0 0},clip]{tn_input_46.png} & \includegraphics[width=0.32\linewidth,trim={0 0 0 0},clip]{tn_dotp_46.jpg} & \includegraphics[width=0.29\linewidth,trim={0 0 0 0},clip]{tn_detection_46.jpg}\\[\abovecaptionskip]
 \small(a) OpenCV output & \small (b) TrueNorth Dot Product & \small (c) TrueNorth Detections \\
 \end{tabular}
-\caption{Mapping HOG to True North. Image obtained from ~\cite{inria}.}
+\caption{Mapping HOG to True North. Input image obtained from ~\cite{inria}.}
 \label{tab:tn}
 \end{figure*}
 
@@ -102,10 +105,9 @@ In addition to advances in novel architectures for vision, there are
 also new emerging technologies on the horizon that can potentially
 offer new visual computing paradigms. 
 One such promising technology involves harnessing the ``analog'' 
-dynamics of coupled oscillators which represents a radical departure 
-from the conventional 1 and 0 based ``digital'' computing. 
-
-Essentially, such oscillators are highly miniaturized, very low-power electrical devices, built using new functional materials such as vanadium dioxide ($VO{_2}$), 
+dynamics of coupled oscillators, which represents a radical departure 
+from the conventional 1 and 0 based ``digital'' computing. Essentially, 
+such oscillators are highly miniaturized, very low-power electrical devices, built using new functional materials such as vanadium dioxide ($VO{_2}$), 
 that output a periodic electrical signal (voltage, current). 
 
 Coupled oscillator based computing entails the interconnection 
@@ -118,6 +120,13 @@ being particularly explored as a transformative solution for
 application in artificial vision systems 
 that would be used in technologies of the future such as autonomous vehicles, 
 augmented reality.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.9\linewidth,trim={0 0 0 0},clip]{oscillators.png}
+\caption{Edge detection using coupled oscillators}
+\label{fig:osc}
+\end{figure} 
 
 There is an existing
 body of work that shows how the analog functions of weakly-coupled
@@ -138,17 +147,11 @@ primitives that improve computational efficiency relative over digital
 calculations, recent work has highlighted the large system-level
 benefits of moving early computation to the sensor chip~\cite{redeye},
 thereby limiting the losses incurred in moving data from the sensing
-to computing portions of wearable and mobile systems. Fully exploiting
+to computing portions of wearable and mobile systems. 
+
+Fully exploiting
 the potential of these nano-oscillators will, however, require
 substantial remapping efforts for existing computations. 
-
-\begin{figure}[!htb]
-\centering
-\includegraphics[width=0.9\linewidth,trim={0 0 0 0},clip]{oscillators.png}
-\caption{Edge detection using coupled oscillators}
-\label{fig:osc}
-\end{figure} 
-
 Our group has
 mapped a number of image pre-processing primitives onto
 coupled-oscillator arrays as shown in Figure~\ref{fig:osc}, and efforts are underway to map larger

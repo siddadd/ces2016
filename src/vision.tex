@@ -41,7 +41,7 @@ Once a salient region is detected, a second stage of object classification can b
 \label{tab:saliencya}
 \end{figure}
 
-Figure~\ref{tab:saliencyb} shows another example of how we can use a combination of saliency and structured features like SURF to product intelligent segmentation of 
+Figure~\ref{tab:saliencyb} shows another example of how we can use a combination of saliency and structured features like SURF to produce intelligent segmentation of 
 items in a grocery shelf. This is in contrast to other region proposal schemes that tend to work well with homogenous objects like people and cars but struggle to produce 
 good intersection over unions (IoUs) over small and closely placed grocery items.
 
@@ -69,9 +69,9 @@ Speeded Up Robust Features (SURF) keypoint matching to generate a list of RoIs t
 \centering
 \begin{tabular}{@{}c@{} @{\hspace{1em}}c@{} @{\hspace{1em}}c@{}}
 \vspace{-5pt}
-\includegraphics[width=0.32\linewidth,trim={0 0 0 0},clip]{scott_img.jpg} & \includegraphics[width=0.31\linewidth,trim={0 0 0 0},clip]{scott_sali.jpg} & \includegraphics[width=0.32\linewidth,trim={0 0 0 0},clip]{scott_roi.jpg}\\[\abovecaptionskip]
+\includegraphics[width=0.31\linewidth,trim={0 0 0 0},clip]{scott_img.jpg} & \includegraphics[width=0.30\linewidth,trim={0 0 0 0},clip]{scott_sali.jpg} & \includegraphics[width=0.31\linewidth,trim={0 0 0 0},clip]{scott_roi.jpg}\\[\abovecaptionskip]
 \small(a) Original image & \small (b) Saliency Map & \small (c) Thresholded Map \\
-\includegraphics[width=0.32\linewidth,trim={0 0 0 0},clip]{scott_best_roi.jpg} & \includegraphics[width=0.32\linewidth,trim={0 0 0 0},clip]{scott_surf2.jpg} & \includegraphics[width=0.32\linewidth,trim={0 0 0 0},clip]{scott_mask.jpg}\\[\abovecaptionskip]
+\includegraphics[width=0.31\linewidth,trim={0 0 0 0},clip]{scott_best_roi.jpg} & \includegraphics[width=0.30\linewidth,trim={0 0 0 0},clip]{scott_surf2.jpg} & \includegraphics[width=0.31\linewidth,trim={0 0 0 0},clip]{scott_mask.jpg}\\[\abovecaptionskip]
 \small(a) Best RoI & \small (b) SURF keypoints & \small (c) Regions of Interest \\
 \end{tabular}
 \caption{Saliency and SURF used to identify similar items.}
@@ -120,3 +120,6 @@ walk in three different directions. As can be seen, these sensors are sensitive 
 \caption{Temporal sensor information used for localization.}
 \label{tab:sensor}
 \end{figure}
+
+In the next section, we move further down the stack and discuss relevant system-level design and architectures that can further enhance the performance of mobile 
+visual-assist systems. 
