@@ -61,7 +61,7 @@ good intersection over unions (IoUs) over small and closely placed grocery items
 A lot of visual scenes exhibit redundancy in some form or the other. 
 For example, in a grocery aisle there are a lot of similar looking products like cereal boxes, detergent bottles, etc. Rather than processing each of these items 
 as independent entities, we can localize similar RoIs, run our classification engine on only one of them and then assign the corresponding label to the entire group of 
-similar RoIs. Figure~\ref{tab:saliencyb} illustrates this flow where AIM is used to generate initial seed RoIs that are then coupled with 
+similar RoIs. Figure~\ref{tab:saliencyc} illustrates this flow where AIM is used to generate initial seed RoIs that are then coupled with 
 Speeded Up Robust Features (SURF) keypoint matching to generate a list of RoIs that are similar in structure. 
 
 %Saliency App 2
@@ -75,20 +75,38 @@ Speeded Up Robust Features (SURF) keypoint matching to generate a list of RoIs t
 \small(a) Best RoI & \small (b) SURF keypoints & \small (c) Regions of Interest \\
 \end{tabular}
 \caption{Saliency and SURF used to identify similar items.}
-\label{tab:saliencyb}
+\label{tab:saliencyc}
 \end{figure*}
 
 \subsection{Context}
 % Hierarchy of Parts
-While deep learning models use learnt features to recognize objects in a scene, another contrasting approach is to use graphical models that build hierarchical 
-representations of objects~\cite{hop}. Compositional rules can be used to build context cues to recognize objects never seen before. For example, an object having 
-four wheels can be classified as a vehicle even if it is a new model of a car that the classifier was never trained on. 
-% Spatial Context
-When it comes to recognizing objects in video streams, spatial context can play a huge role in 
-reducing the workload on computationally intensive models such as CNNs. 
-For example, in ~\cite{estimedia2015}, the authors proposed a Bayesian network called Visual Co-occurrence Network (ViCoNet) where objects were represented as nodes and 
-edges represented spatial relations between them. This network was then used to improve the performance of their system as well as the recognition rates.
-Figure~\ref{fig:viconet} shows an example of such a graph, which could very well represent a fresh-fruit section of a grocery shop. 
+While deep learning models use learnt features to recognize objects in
+a scene, visual systems can augment the current input data with
+knowledge about the usual organization of the environment that can
+provide greater scene context~\cite{estimedia2015} and heirarchical
+models~\cite{hop} that can reason about objects as collections of
+parts.  Compositional rules can be used to build context cues to
+recognize objects never seen before if they contain previously seen
+sub-pieces. For example, if a product's packaging changes or displays
+a seasonal advertisement, but key portions of the branding remain,
+then the product could still be recognized even if this version has
+never previously been seen.  Similarly, when it comes to recognizing
+objects in video streams, spatial and temporal context can play a huge
+role in reducing the workload on computationally intensive models such
+as CNNs.  For example, in~\cite{estimedia2015}, the authors proposed a
+Bayesian network called the Visual Co-occurrence Network (ViCoNet)
+where objects were represented as nodes and edges represented spatial
+relations between them. Figure~\ref{fig:viconet} shows an example of a
+subgraph in such a system, which could very well represent a
+fresh-fruit section of a grocery shop. From this graph, it can be seen
+that, if the previous classification is an apple, then the next region
+is more likely a bannanna than a strawberry, and this probability can
+be used to bias the classifications. Moreover, this graph naturally
+encodes aisle relationships, and can be used to feed an aisle
+predictor to narrow the set of plausible classes for any
+identification. These pruning features allowed the system using this
+network to improve performance as well as recognition rates.
+
 
 \begin{figure}[!htb]
 \centering
