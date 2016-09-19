@@ -21,6 +21,12 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{WHO}
+\BIBentryALTinterwordspacing
+World health organization. (Date last accessed 16-Sep-2016). [Online].
+  Available: \url{http://www.who.int/mediacentre/factsheets/fs282/en/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Bengio2009}
 Y.~Bengio, ``{Learning Deep Architectures for AI}.''\hskip 1em plus 0.5em minus
   0.4em\relax Now Publishers, 2009.
@@ -45,10 +51,10 @@ I.~Kokkinos and A.~Yuille, ``{HOP: Hierarchical Object Parsing},'' in
   Conference on}, June 2009, pp. 802--809.
 
 \bibitem{estimedia2015}
-S.~Advani, B.~Smith, Y.~Tanabe, K.~Irick, M.~Cotter, J.~Sampson, and
-  V.~Narayanan, ``Visual co-occurrence network: Using context for large-scale
-  object recognition in retail,'' in \emph{Embedded Systems For Real-time
-  Multimedia (ESTIMedia), 2015 13th IEEE Symposium on}, Oct 2015, pp. 1--10.
+S.~Advani \emph{et~al.}, ``Visual co-occurrence network: Using context for
+  large-scale object recognition in retail,'' in \emph{Embedded Systems For
+  Real-time Multimedia (ESTIMedia), 2015 13th IEEE Symposium on}, Oct 2015, pp.
+  1--10.
 
 \bibitem{stein2009neural}
 B.~E. Stein, T.~R. Stanford, and B.~A. Rowland, ``{The Neural Basis of
