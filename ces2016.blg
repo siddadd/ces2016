@@ -18,45 +18,45 @@ Warning--empty journal in Bruceb
 Warning--empty year in Bruceb
 
 Done.
-You've used 15 entries,
+You've used 16 entries,
             4024 wiz_defined-function locations,
-            1258 strings with 16675 characters,
-and the built_in function-call counts, 9103 in all, are:
-= -- 691
-> -- 188
-< -- 57
-+ -- 105
-- -- 34
-* -- 429
-:= -- 1410
-add.period$ -- 31
-call.type$ -- 15
-change.case$ -- 18
-chr.to.int$ -- 126
-cite$ -- 19
-duplicate$ -- 703
-empty$ -- 816
-format.name$ -- 44
-if$ -- 2078
+            1265 strings with 16838 characters,
+and the built_in function-call counts, 10042 in all, are:
+= -- 770
+> -- 212
+< -- 67
++ -- 117
+- -- 38
+* -- 477
+:= -- 1549
+add.period$ -- 33
+call.type$ -- 16
+change.case$ -- 19
+chr.to.int$ -- 147
+cite$ -- 20
+duplicate$ -- 769
+empty$ -- 882
+format.name$ -- 49
+if$ -- 2297
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 133
-newline$ -- 76
-num.names$ -- 12
-pop$ -- 346
+int.to.str$ -- 16
+missing$ -- 144
+newline$ -- 79
+num.names$ -- 13
+pop$ -- 368
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 688
+skip$ -- 758
 stack$ -- 0
-substring$ -- 310
-swap$ -- 505
-text.length$ -- 15
+substring$ -- 360
+swap$ -- 568
+text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 15
+type$ -- 16
 warning$ -- 4
-while$ -- 36
-width$ -- 17
-write$ -- 159
+while$ -- 40
+width$ -- 18
+write$ -- 170
 (There were 4 warnings)
