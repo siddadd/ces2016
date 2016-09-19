@@ -28,7 +28,7 @@ To provide this feedback to the users we use the glove and the glass as mentione
 The off-the-shelf smart glass provides the system with a head view as well as 
 network connectivity and speakers for audio feedback.
 In the assistive system the glasses are mainly used to guide the person at the aisle level
-to be infront of their intended/desired product. The commands such as ``left'', ``right'', ``forward'', ``back''
+to be in front of their intended/desired product. The commands such as ``left'', ``right'', ``forward'', ``back''
 provide the necessary direction. 
 \subsubsection{Custom Glove}
 The custom glove has both a camera and a series of vibration motors.
@@ -78,16 +78,18 @@ An example how this would work is if the headset camera view indicates the perso
 but the glove camera was pointing straight. The system would be able tell the user to turn just their head to align the two views.
 The biggest challenge that exists in a guidance system is being able to keep up with the real-time demands of the user. With an assistive system, 
 solving this is crucial. In order to do this effectively, the system as a whole must leverage every available compute power 
-including that available at both the edge devices, the local infastructure and a powerful cloud compute platform. 
+including that available at both the edge devices, the local infrastructure and a powerful cloud compute platform. 
 
 As stated earlier, for our cloud compute device we use a high-performance server that is enabled with both FPGAs and GPUs. 
-By leverageing custom architectures and exploiting parrallel algorithms we are able to process 1080p video frames at around 50fps. 
+By leveraging custom architectures and exploiting parallel algorithms we are able to process 1080p video frames at around 50fps. 
 While this may seem like it meets the real-time constraint it does not. Since a server needs to be able handle multiple connections at once, 
 just the accelerated back-end would handle 50 streams at 1fps. To make up this gap in performance, 
 tricks need to be played at the local and edge compute devices to force this difference to be imperceivable. 
 Some of the compute that can be done at the front-end mainly involves the filtering of data. For instance, a local infrastructure would be able to run the 
 images being streamed back to the server through one of our hardware accelerated saliency algorithms. Additionally the edge device 
-could use its sensors to only send a frame when the user has moved enough that the scene needs to be recomputed fully. Once the desired products are found, the local infastructure or edge device would be able to run a computationaly less intense tracking algorithm to be able to continue to guide the user toward the product between communications with the cloud back-end.
+could use its sensors to only send a frame when the user has moved enough that the scene needs to be recomputed fully. 
+Once the desired products are found, the local infrastructure or edge device would be able to run a computationally less intense tracking 
+algorithm to be able to continue to guide the user toward the product between communications with the cloud back-end.
 
 In the next section we discuss a few algorithms deployed in our recognition system that use techniques to augment machine learning. 
 
