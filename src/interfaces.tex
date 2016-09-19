@@ -1,6 +1,6 @@
-One of the most important aspects of any technology is how humans interact with it.
+One of the most important aspects of any technology is how the user interacts with it.
 Having an intuitive, simple, and functional interface can often be the difference between
-a widely adopted device and that which is not. The interface design becomes even more important
+a successful widely adopted device and that which is not. The interface design becomes even more important
 when trying to help someone with an impairment. Not only does the interface have to be user-friendly, 
 but it also has to be robust for different environments. 
 In the case of assisting a person with visual impairment this means being able to handle cases
@@ -10,9 +10,8 @@ Such a scenario would be when reaching for a product if you momentarily move you
 Our visual assistive system consists of several interacting components: 
 
 \begin{itemize}
-\item One of the devices that we use is an off-the-shelf Android-powered smart glass. 
-The glass has both a camera and a built-in headset along with
-networking capability. 
+\item An off-the-shelf Android-powered smart glass. 
+The glass has both a camera and a built-in headset along with networking capability. 
 \item We use a specially designed prototype glove that has been
 modified to have both a camera attached to it, as well a set of
 vibration motors. 
@@ -26,10 +25,9 @@ Figure~\ref{fig:whole_system_chris} shows a person wearing the smart
 glasses and gloves during a test of the system. The compute-augmented
 shopping cart (see~\ref{fig:introduction}) is not shown.
 
-
 \subsection{Interfaces}
 For our assistive technology we employ two main modes of providing feedback and guidance to the user. These modes are auditory feedback and tactile feedback. 
-To provide this feedback to the users we use the glove and the glass as mentioned above.
+To provide this feedback to the users, we use the glove and the glasses as listed above.
 \subsubsection{Smart Glass}
 The off-the-shelf smart glass provides the system with a head view as well as 
 network connectivity and speakers for audio feedback.
@@ -37,12 +35,12 @@ In the assistive system the glasses are mainly used to guide the person at the a
 to be in front of their intended/desired product. The commands such as ``left'', ``right'', ``forward'', ``back''
 provide the necessary direction. 
 \subsubsection{Custom Glove}
-The custom glove has both a camera and a series of vibration motors.
+The custom glove we employ has both a camera and a series of vibration motors.
 This camera that is on the glove allows the system to have the view
- point of what the person is reaching out for. This view point may be different from
+point of what the person is reaching out for. This viewpoint may be different from
 that of the camera mounted on the headset and is critical to being able to provide
 guidance all the way to physically picking up the intended product.
-The vibration motors attached to the glove allow the system to provide
+The attached vibration motors allow the glove the system to provide
 subtle feedback to the user to convey to them which direction they would
 have to move their hand to be able to grab the desired product. An
 example of this would be buzzing the right motor to indicate a
@@ -66,34 +64,25 @@ In our system, the auditory feedback combined with the haptic feedback from the 
 \subsection{Challenges}
 Creating a truly assistive system with a variety of interfaces presents a series 
 of challenges, not all of which are initially obvious. These challenges include guiding the person
-through the store which includes localization, obstacle and person avoidance and grocery shopping. 
+through the store which includes the challenge of localization, obstacle and person avoidance, and grocery shopping. 
 Other challenges are user centric. These include adapting the frequency of guidance commands to the speed at which the person is moving, 
 reconciling different camera views to provide correct guidance, and having enough computational power to keep the system real-time. 
 These challenges can be resolved via various methods. To solve the problem of guiding the person through the store, the smart cart could be equipped with various sensors. 
 This could include cameras that not only have RGB information, but even depth and possibly thermal sensors. 
-Also the use of localization technologies such as indoor GPS, and bluetooth beacons around the store have the ability to track the user and 
-provide the needed level of localization to the system.
-
-Another challenge that arose came from having two camera views that are not always in alignment with one another. An example of when this occurs is 
-while shopping when the user goes to grab a product, (s)he might look away while still reaching in towards the intended product. 
+The use of localization technologies such as indoor GPS, and Bluetooth beacons around the store have the ability to track the user and provide the needed level of localization to the system (e.g aisle location).
+The challenge of reconciling different camera views arose from having two camera views that are not always in alignment with one another (the glove and the glasses). An example of when this occurs is
+while shopping when the user goes to grab a product, they might look away while still reaching in towards the intended product. 
 This poses a challenge to a system giving guidance based on the view from those cameras. One possible solution to this issue would be the addition of sensors 
-to the glasses and the glove. The addition of an IMU and Magnometer to both of the edge compute solutions give the ability to correctly provide guidance in these cases. 
+to the glasses and the glove. The addition of an IMU and Magnometer to both of the edge compute solutions give the ability to correctly provide guidance in this case, and other similar cases. 
 An example how this would work is if the headset camera view indicates the person needed to move right, 
-but the glove camera was pointing straight. The system would be able tell the user to turn just their head to align the two views.
-The biggest challenge that exists in a guidance system is being able to keep up with the real-time demands of the user. With an assistive system, 
-solving this is crucial. In order to do this effectively, the system as a whole must leverage every available compute power 
-including that available at both the edge devices, the local infrastructure and a powerful cloud compute platform. 
-
+but the glove camera was pointing straight. The system would be able tell the user to turn just their head to align the two views, rather telling them to step right.
+However while all of the listed challeges can be considered implementation details, the biggest challenge that exists in an assistive system is being able to keep up with the real-time demands of the user. With an assistive system, 
+solving challenge this is critical. In order to do this effectively, the system as a whole must leverage all available compute, including the compute power, however limited, available at the edge devices and the local infrastructure.
 As stated earlier, for our cloud compute device we use a high-performance server that is enabled with both FPGAs and GPUs. 
 By leveraging custom architectures and exploiting parallel algorithms we are able to process 1080p video frames at around 50fps. 
-While this may seem like it meets the real-time constraint it does not. Since a server needs to be able handle multiple connections at once, 
-just the accelerated back-end would handle 50 streams at 1fps. To make up this gap in performance, 
-tricks need to be played at the local and edge compute devices to force this difference to be imperceivable. 
-Some of the compute that can be done at the front-end mainly involves the filtering of data. For instance, a local infrastructure would be able to run the 
-images being streamed back to the server through one of our hardware accelerated saliency algorithms. Additionally the edge device 
+While this may seem like it meets the real-time constraint it does not. This is because a server needs to be able handle multiple connections at once. Our current accelerated back-end would be able handle about 50 streams at 1fps. To make up this gap in performance, tricks need to be played at the local and edge compute devices to make this disparity become imperceivable. 
+Some of the compute that can be offloaded the the edge devices and local infrastructure are mainly filtering proccesses. For instance, during the product detection phase a local infrastructure would be able to run the images being streamed back to the server through one of our hardware accelerated saliency algorithms. Additionally the edge device 
 could use its sensors to only send a frame when the user has moved enough that the scene needs to be recomputed fully. 
-Once the desired products are found, the local infrastructure or edge device would be able to run a computationally less intense tracking 
-algorithm to be able to continue to guide the user toward the product between communications with the cloud back-end.
-
+Once the products are detected, the local infrastructure or edge device would be able to run a computationally less demanding tracking algorithm to be able to continue to guide the user toward the product between communications with the cloud back-end.
 In the next section we discuss a few algorithms deployed in our recognition system that use techniques to augment machine learning. 
 
