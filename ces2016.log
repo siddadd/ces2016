@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 SEP 2016 11:58
+=======
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  19 SEP 2016 11:59
+>>>>>>> 9b3449ee61642ab697d2341e7f37ef760ac928aa
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -552,6 +556,7 @@ Package caption Info: Unknown document class (or package),
 \sf@top=\skip53
 \sf@bottom=\skip54
 )
+<<<<<<< HEAD
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/fixltx2e.sty
 Package: fixltx2e 2015/06/22 v2.0b fixes to LaTeX (obsolete)
 
@@ -560,6 +565,11 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 (fixltx2e)                All fixes are now in the LaTeX kernel.
 (fixltx2e)                See the latexrelease package for details.
 
+=======
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2006/09/13 v1.1m fixes to LaTeX
+LaTeX Info: Redefining \em on input line 420.
+>>>>>>> 9b3449ee61642ab697d2341e7f37ef760ac928aa
 ) (./ces2016.aux)
 \openout1 = `ces2016.aux'.
 
@@ -640,22 +650,41 @@ ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
+<<<<<<< HEAD
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 488.
+=======
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 490.
+>>>>>>> 9b3449ee61642ab697d2341e7f37ef760ac928aa
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
+<<<<<<< HEAD
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 488.
 
 Underfull \hbox (badness 4229) in paragraph at lines 488--488
+=======
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 490.
+
+Underfull \hbox (badness 10000) in paragraph at lines 490--490
+[][][]\OT1/ptm/m/n/8 K. Ir-ick is with Sil-i-con-Scapes LLC, PA, USA (email:
+ []
+
+
+Underfull \hbox (badness 4229) in paragraph at lines 490--490
+>>>>>>> 9b3449ee61642ab697d2341e7f37ef760ac928aa
 [][][]\OT1/ptm/m/n/8 N. Shukla and S. Datta are with the De-part-ment of Elec-t
 ri-cal
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 2698) in paragraph at lines 488--488
+=======
+Underfull \hbox (badness 2698) in paragraph at lines 490--490
+>>>>>>> 9b3449ee61642ab697d2341e7f37ef760ac928aa
 \OT1/ptm/m/n/8 En-gi-neer-ing, Uni-ver-sity of Notre Dame, IN, USA (email: \OMS
 /cmsy/m/n/8 f\OT1/ptm/m/n/8 nshukla,
  []
@@ -674,7 +703,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 13.
+<<<<<<< HEAD
  [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+=======
+ [1{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+>>>>>>> 9b3449ee61642ab697d2341e7f37ef760ac928aa
 
 
 ]
@@ -682,7 +715,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: ./figs/chris_system.jpg Graphic file (type jpg)
 
 <use ./figs/chris_system.jpg>
+<<<<<<< HEAD
 Package pdftex.def Info: ./figs/chris_system.jpg used on input line 54.
+=======
+Package pdftex.def Info: ./figs/chris_system.jpg used on input line 56.
+>>>>>>> 9b3449ee61642ab697d2341e7f37ef760ac928aa
 (pdftex.def)             Requested size: 226.79846pt x 170.08815pt.
  [2 <./figs/introduction.png>]) (./src/vision.tex
 [3 <./figs/chris_system.jpg>]
@@ -834,6 +871,12 @@ Overfull \hbox (3.50006pt too wide) in paragraph at lines 134--143
 ) (./src/hardware.tex [4 <./figs/mp1a.jpg> <./figs/mp1b.jpg> <./figs/mp2a.jpg> 
 <./figs/mp2b.jpg> <./figs/mp3a.jpg> <./figs/mp3b.jpg> <./figs/surf_saliency_ori
 g.png> <./figs/surf_saliency.png>]
+<<<<<<< HEAD
+=======
+Underfull \vbox (badness 1400) has occurred while \output is active []
+
+
+>>>>>>> 9b3449ee61642ab697d2341e7f37ef760ac928aa
 
 LaTeX Warning: Text page 5 contains only floats.
 
@@ -904,6 +947,7 @@ File: ./figs/oscillators.png Graphic file (type png)
 <use ./figs/oscillators.png>
 Package pdftex.def Info: ./figs/oscillators.png used on input line 126.
 (pdftex.def)             Requested size: 226.79846pt x 212.02994pt.
+<<<<<<< HEAD
 ) (./src/conclusion.tex) [6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -931,6 +975,32 @@ s/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmb8a
 .pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
 /local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 Output written on ces2016.pdf (8 pages, 11404394 bytes).
+=======
+) (./src/conclusion.tex) [6] (./ces2016.bbl
+[7 <./figs/oc_image_00000596_0.png (PNG copy)> <./figs/hwpedro_122000_image_000
+00596_0.png (PNG copy)> <./figs/hwpedro_61000_image_00000596_0.png (PNG copy)> 
+<./figs/cnn_image_00000596_0.png (PNG copy)> <./figs/tn_input_46.png (PNG copy)
+> <./figs/tn_dotp_46.jpg> <./figs/tn_detection_46.jpg> <./figs/oscillators.png>
+]) [8] (./ces2016.aux) ) 
+Here is how much of TeX's memory you used:
+ 11304 strings out of 493315
+ 205728 string characters out of 6137904
+ 263831 words of memory out of 5000000
+ 14472 multiletter control sequences out of 15000+600000
+ 40780 words of font info for 79 fonts, out of 8000000 for 9000
+ 960 hyphenation exceptions out of 8191
+ 55i,12n,55p,471b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/bas
+e/8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
+.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pf
+b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ces2016.pdf (8 pages, 11405249 bytes).
+>>>>>>> 9b3449ee61642ab697d2341e7f37ef760ac928aa
 PDF statistics:
  162 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
