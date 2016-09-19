@@ -41,9 +41,10 @@ Once a salient region is detected, a second stage of object classification can b
 \label{tab:saliencya}
 \end{figure}
 
-Figure~\ref{tab:saliencyb} shows another example of how we can use a combination of saliency and structured features like SURF to produce intelligent segmentation of 
-items in a grocery shelf. This is in contrast to other region proposal schemes that tend to work well with homogeneous objects like people and cars but struggle to produce 
-good intersection over unions (IoUs) over small and closely placed grocery items.
+Figure~\ref{tab:saliencyb} shows how a clustering of feature points
+can intelligently segment items in a grocery shelf. Our approach works
+well even with small and closely placed items of different types, as
+are commonly seen in grocery environments.
 
 %Saliency App 2
 \begin{figure}[!htb]
@@ -57,12 +58,17 @@ good intersection over unions (IoUs) over small and closely placed grocery items
 \label{tab:saliencyb}
 \end{figure}
 
-\subsection{Redundancy}
-A lot of visual scenes exhibit redundancy in some form or the other. 
-For example, in a grocery aisle there are a lot of similar looking products like cereal boxes, detergent bottles, etc. Rather than processing each of these items 
-as independent entities, we can localize similar RoIs, run our classification engine on only one of them and then assign the corresponding label to the entire group of 
-similar RoIs. Figure~\ref{tab:saliencyc} illustrates this flow where AIM is used to generate initial seed RoIs that are then coupled with 
-Speeded Up Robust Features (SURF) keypoint matching to generate a list of RoIs that are similar in structure. 
+
+At the other extreme, while grocery environments are diverse, in a
+given grocery aisle there are often a lot of similar looking products
+like cereal boxes, detergent bottles, etc. Rather than processing each
+of these items as independent entities, we can localize similar RoIs,
+run our classification engine on only one of them and then assign the
+corresponding label to the entire group of similar
+RoIs. Figure~\ref{tab:saliencyc} illustrates this flow where AIM is
+used to generate initial seed RoIs that are then coupled with Speeded
+Up Robust Features (SURF) keypoint matching to generate a list of RoIs
+that are similar in structure.
 
 %Saliency App 2
 \begin{figure*}[!htb]
