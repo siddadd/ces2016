@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  20 SEP 2016 02:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  20 SEP 2016 13:46
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -605,14 +605,15 @@ ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
- (./src/introduction.tex
+ (./src/abstract.tex)
+(./src/introduction.tex
 pdfTeX warning (Object streams): \pdfobjcompresslevel > 0 requires \pdfminorver
 sion > 4. Object streams disabled now.
 <./figs/introduction.png, id=4, 770.88pt x 578.16pt>
 File: ./figs/introduction.png Graphic file (type png)
 
 <use ./figs/introduction.png>
-Package pdftex.def Info: ./figs/introduction.png used on input line 54.
+Package pdftex.def Info: ./figs/introduction.png used on input line 50.
 (pdftex.def)             Requested size: 464.39685pt x 299.91847pt.
 ) (./src/interfaces.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -623,185 +624,165 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 ]
-<./figs/chris_system.jpg, id=14, 2055.68pt x 1541.76pt>
+<./figs/chris_system.jpg, id=15, 2055.68pt x 1541.76pt>
 File: ./figs/chris_system.jpg Graphic file (type jpg)
 
 <use ./figs/chris_system.jpg>
 Package pdftex.def Info: ./figs/chris_system.jpg used on input line 54.
 (pdftex.def)             Requested size: 226.79846pt x 170.08815pt.
- [2 <./figs/introduction.png> <./figs/chris_system.jpg>]
-Underfull \vbox (badness 2213) has occurred while \output is active []
+ [2 <./figs/introduction.png> <./figs/chris_system.jpg>]) (./src/vision.tex [3]
 
-)
-(./src/vision.tex [3] <./figs/mp1a.jpg, id=26, 335.70581pt x 152.2283pt>
+<./figs/mp1a.jpg, id=27, 335.70581pt x 152.2283pt>
 File: ./figs/mp1a.jpg Graphic file (type jpg)
-
-<use ./figs/mp1a.jpg>
+ <use ./figs/mp1a.jpg>
 Package pdftex.def Info: ./figs/mp1a.jpg used on input line 35.
 (pdftex.def)             Requested size: 126.0pt x 57.13425pt.
- <./figs/mp1b.jpg, id=28, 328.3448pt x 153.89871pt>
-File: ./figs/mp1b.jpg Graphic file (type jpg)
 
-<use ./figs/mp1b.jpg>
+<./figs/mp1b.jpg, id=29, 328.3448pt x 153.89871pt>
+File: ./figs/mp1b.jpg Graphic file (type jpg)
+ <use ./figs/mp1b.jpg>
 Package pdftex.def Info: ./figs/mp1b.jpg used on input line 35.
 (pdftex.def)             Requested size: 126.0pt x 59.05743pt.
- <./figs/mp2a.jpg, id=30, 333.4056pt x 154.6578pt>
-File: ./figs/mp2a.jpg Graphic file (type jpg)
 
-<use ./figs/mp2a.jpg>
+<./figs/mp2a.jpg, id=31, 333.4056pt x 154.6578pt>
+File: ./figs/mp2a.jpg Graphic file (type jpg)
+ <use ./figs/mp2a.jpg>
 Package pdftex.def Info: ./figs/mp2a.jpg used on input line 36.
 (pdftex.def)             Requested size: 126.0pt x 58.44727pt.
- <./figs/mp2b.jpg, id=32, 330.9966pt x 151.767pt>
-File: ./figs/mp2b.jpg Graphic file (type jpg)
 
-<use ./figs/mp2b.jpg>
+<./figs/mp2b.jpg, id=33, 330.9966pt x 151.767pt>
+File: ./figs/mp2b.jpg Graphic file (type jpg)
+ <use ./figs/mp2b.jpg>
 Package pdftex.def Info: ./figs/mp2b.jpg used on input line 36.
 (pdftex.def)             Requested size: 126.0pt x 57.77162pt.
- <./figs/mp3a.jpg, id=34, 331.9602pt x 151.2852pt>
-File: ./figs/mp3a.jpg Graphic file (type jpg)
 
-<use ./figs/mp3a.jpg>
+<./figs/mp3a.jpg, id=35, 331.9602pt x 151.2852pt>
+File: ./figs/mp3a.jpg Graphic file (type jpg)
+ <use ./figs/mp3a.jpg>
 Package pdftex.def Info: ./figs/mp3a.jpg used on input line 37.
 (pdftex.def)             Requested size: 126.0pt x 57.42201pt.
- <./figs/mp3b.jpg, id=36, 330.033pt x 149.8398pt>
-File: ./figs/mp3b.jpg Graphic file (type jpg)
 
-<use ./figs/mp3b.jpg>
+<./figs/mp3b.jpg, id=37, 330.033pt x 149.8398pt>
+File: ./figs/mp3b.jpg Graphic file (type jpg)
+ <use ./figs/mp3b.jpg>
 Package pdftex.def Info: ./figs/mp3b.jpg used on input line 37.
 (pdftex.def)             Requested size: 126.0pt x 57.20493pt.
 
-<./figs/surf_saliency_orig.png, id=38, 289.5618pt x 192.2382pt>
+<./figs/surf_saliency_orig.png, id=39, 289.5618pt x 192.2382pt>
 File: ./figs/surf_saliency_orig.png Graphic file (type png)
 
 <use ./figs/surf_saliency_orig.png>
 Package pdftex.def Info: ./figs/surf_saliency_orig.png used on input line 54.
 (pdftex.def)             Requested size: 113.39923pt x 75.28645pt.
 
-<./figs/surf_saliency.png, id=40, 289.5618pt x 191.7564pt>
+<./figs/surf_saliency.png, id=41, 289.5618pt x 191.7564pt>
 File: ./figs/surf_saliency.png Graphic file (type png)
 
 <use ./figs/surf_saliency.png>
 Package pdftex.def Info: ./figs/surf_saliency.png used on input line 54.
 (pdftex.def)             Requested size: 113.39923pt x 75.09776pt.
 
-<./figs/scott_img.jpg, id=42, 246.1697pt x 184.43906pt>
+<./figs/scott_img.jpg, id=43, 246.1697pt x 184.43906pt>
 File: ./figs/scott_img.jpg Graphic file (type jpg)
 
 <use ./figs/scott_img.jpg>
 Package pdftex.def Info: ./figs/scott_img.jpg used on input line 78.
 (pdftex.def)             Requested size: 159.95874pt x 119.85019pt.
 
-<./figs/scott_sali.jpg, id=44, 198.7425pt x 157.33781pt>
+<./figs/scott_sali.jpg, id=45, 198.7425pt x 157.33781pt>
 File: ./figs/scott_sali.jpg Graphic file (type jpg)
 
 <use ./figs/scott_sali.jpg>
 Package pdftex.def Info: ./figs/scott_sali.jpg used on input line 78.
 (pdftex.def)             Requested size: 154.80157pt x 122.55493pt.
 
-<./figs/scott_roi.jpg, id=46, 328.22626pt x 246.1697pt>
+<./figs/scott_roi.jpg, id=47, 328.22626pt x 246.1697pt>
 File: ./figs/scott_roi.jpg Graphic file (type jpg)
 
 <use ./figs/scott_roi.jpg>
 Package pdftex.def Info: ./figs/scott_roi.jpg used on input line 78.
 (pdftex.def)             Requested size: 159.95874pt x 119.97061pt.
 
-<./figs/scott_best_roi.jpg, id=48, 225.84375pt x 169.38281pt>
+<./figs/scott_best_roi.jpg, id=49, 225.84375pt x 169.38281pt>
 File: ./figs/scott_best_roi.jpg Graphic file (type jpg)
 
 <use ./figs/scott_best_roi.jpg>
 Package pdftex.def Info: ./figs/scott_best_roi.jpg used on input line 80.
 (pdftex.def)             Requested size: 159.95874pt x 119.97574pt.
 
-<./figs/scott_surf2.jpg, id=50, 197.98969pt x 147.55125pt>
+<./figs/scott_surf2.jpg, id=51, 197.98969pt x 147.55125pt>
 File: ./figs/scott_surf2.jpg Graphic file (type jpg)
 
 <use ./figs/scott_surf2.jpg>
 Package pdftex.def Info: ./figs/scott_surf2.jpg used on input line 80.
 (pdftex.def)             Requested size: 154.80157pt x 115.36642pt.
 
-<./figs/scott_mask.jpg, id=52, 96.36pt x 72.7518pt>
+<./figs/scott_mask.jpg, id=53, 96.36pt x 72.7518pt>
 File: ./figs/scott_mask.jpg Graphic file (type jpg)
 
 <use ./figs/scott_mask.jpg>
 Package pdftex.def Info: ./figs/scott_mask.jpg used on input line 80.
 (pdftex.def)             Requested size: 159.95874pt x 120.76903pt.
 
-<./figs/viconetexample.png, id=54, 698.61pt x 499.6266pt>
+<./figs/viconetexample.png, id=55, 698.61pt x 499.6266pt>
 File: ./figs/viconetexample.png Graphic file (type png)
 
 <use ./figs/viconetexample.png>
 Package pdftex.def Info: ./figs/viconetexample.png used on input line 118.
 (pdftex.def)             Requested size: 226.79846pt x 162.20137pt.
 
-<./figs/walk_left_p1.png, id=55, 562.1pt x 421.575pt>
+<./figs/walk_left_p1.png, id=56, 562.1pt x 421.575pt>
 File: ./figs/walk_left_p1.png Graphic file (type png)
 
 <use ./figs/walk_left_p1.png>
 Package pdftex.def Info: ./figs/walk_left_p1.png used on input line 136.
-(pdftex.def)             Requested size: 126.0pt x 94.49648pt.
+(pdftex.def)             Requested size: 170.28094pt x 138.24425pt.
 
-<./figs/walk_left_p2.png, id=57, 562.1pt x 421.575pt>
-File: ./figs/walk_left_p2.png Graphic file (type png)
-
-<use ./figs/walk_left_p2.png>
-Package pdftex.def Info: ./figs/walk_left_p2.png used on input line 136.
-(pdftex.def)             Requested size: 126.0pt x 94.49648pt.
-
-<./figs/walk_right_p1.png, id=59, 562.1pt x 421.575pt>
+<./figs/walk_right_p1.png, id=58, 562.1pt x 421.575pt>
 File: ./figs/walk_right_p1.png Graphic file (type png)
 
 <use ./figs/walk_right_p1.png>
-Package pdftex.def Info: ./figs/walk_right_p1.png used on input line 138.
-(pdftex.def)             Requested size: 126.0pt x 94.49648pt.
+Package pdftex.def Info: ./figs/walk_right_p1.png used on input line 136.
+(pdftex.def)             Requested size: 170.28094pt x 138.24425pt.
 
-<./figs/walk_right_p2.png, id=61, 562.1pt x 421.575pt>
+<./figs/walk_straight_p1.png, id=60, 562.1pt x 421.575pt>
+File: ./figs/walk_straight_p1.png Graphic file (type png)
+
+<use ./figs/walk_straight_p1.png>
+Package pdftex.def Info: ./figs/walk_straight_p1.png used on input line 136.
+(pdftex.def)             Requested size: 170.28094pt x 138.24425pt.
+
+<./figs/walk_left_p2.png, id=62, 562.1pt x 421.575pt>
+File: ./figs/walk_left_p2.png Graphic file (type png)
+
+<use ./figs/walk_left_p2.png>
+Package pdftex.def Info: ./figs/walk_left_p2.png used on input line 138.
+(pdftex.def)             Requested size: 170.28094pt x 138.24425pt.
+
+<./figs/walk_right_p2.png, id=64, 562.1pt x 421.575pt>
 File: ./figs/walk_right_p2.png Graphic file (type png)
 
 <use ./figs/walk_right_p2.png>
 Package pdftex.def Info: ./figs/walk_right_p2.png used on input line 138.
-(pdftex.def)             Requested size: 126.0pt x 94.49648pt.
+(pdftex.def)             Requested size: 170.28094pt x 138.24425pt.
 
-<./figs/walk_straight_p1.png, id=63, 562.1pt x 421.575pt>
-File: ./figs/walk_straight_p1.png Graphic file (type png)
-
-<use ./figs/walk_straight_p1.png>
-Package pdftex.def Info: ./figs/walk_straight_p1.png used on input line 140.
-(pdftex.def)             Requested size: 126.0pt x 94.49648pt.
-
-<./figs/walk_straight_p2.png, id=65, 562.1pt x 421.575pt>
+<./figs/walk_straight_p2.png, id=66, 562.1pt x 421.575pt>
 File: ./figs/walk_straight_p2.png Graphic file (type png)
 
 <use ./figs/walk_straight_p2.png>
-Package pdftex.def Info: ./figs/walk_straight_p2.png used on input line 140.
-(pdftex.def)             Requested size: 126.0pt x 94.49648pt.
-
-Overfull \hbox (3.50006pt too wide) in paragraph at lines 134--143
- [][] 
- []
-
+Package pdftex.def Info: ./figs/walk_straight_p2.png used on input line 138.
+(pdftex.def)             Requested size: 170.28094pt x 138.24425pt.
 ) (./src/hardware.tex [4 <./figs/mp1a.jpg> <./figs/mp1b.jpg> <./figs/mp2a.jpg> 
 <./figs/mp2b.jpg> <./figs/mp3a.jpg> <./figs/mp3b.jpg> <./figs/surf_saliency_ori
 g.png> <./figs/surf_saliency.png>]
-
-LaTeX Warning: Text page 5 contains only floats.
-
-
-Overfull \vbox (6.78946pt too high) has occurred while \output is active []
-
-
-[5 <./figs/scott_img.jpg> <./figs/scott_sali.jpg> <./figs/scott_roi.jpg> <./fig
-s/scott_best_roi.jpg> <./figs/scott_surf2.jpg> <./figs/scott_mask.jpg> <./figs/
-walk_left_p1.png (PNG copy)> <./figs/walk_left_p2.png (PNG copy)> <./figs/walk_
-right_p1.png (PNG copy)> <./figs/walk_right_p2.png (PNG copy)> <./figs/walk_str
-aight_p1.png (PNG copy)> <./figs/walk_straight_p2.png (PNG copy)> <./figs/vicon
-etexample.png>] <./figs/oc_image_00000596_0.png, id=96, 642.4pt x 481.8pt>
+<./figs/oc_image_00000596_0.png, id=81, 642.4pt x 481.8pt>
 File: ./figs/oc_image_00000596_0.png Graphic file (type png)
 
 <use ./figs/oc_image_00000596_0.png>
 Package pdftex.def Info: ./figs/oc_image_00000596_0.png used on input line 41.
 (pdftex.def)             Requested size: 113.52063pt x 85.13965pt.
 
-<./figs/hwpedro_122000_image_00000596_0.png, id=98, 642.4pt x 481.8pt>
+<./figs/hwpedro_122000_image_00000596_0.png, id=83, 642.4pt x 481.8pt>
 File: ./figs/hwpedro_122000_image_00000596_0.png Graphic file (type png)
 
 <use ./figs/hwpedro_122000_image_00000596_0.png>
@@ -809,7 +790,7 @@ Package pdftex.def Info: ./figs/hwpedro_122000_image_00000596_0.png used on inp
 ut line 41.
 (pdftex.def)             Requested size: 113.52063pt x 85.13965pt.
 
-<./figs/hwpedro_61000_image_00000596_0.png, id=100, 642.4pt x 481.8pt>
+<./figs/hwpedro_61000_image_00000596_0.png, id=85, 642.4pt x 481.8pt>
 File: ./figs/hwpedro_61000_image_00000596_0.png Graphic file (type png)
 
 <use ./figs/hwpedro_61000_image_00000596_0.png>
@@ -817,68 +798,71 @@ Package pdftex.def Info: ./figs/hwpedro_61000_image_00000596_0.png used on inpu
 t line 41.
 (pdftex.def)             Requested size: 113.52063pt x 85.13965pt.
 
-<./figs/cnn_image_00000596_0.png, id=102, 642.4pt x 481.8pt>
+<./figs/cnn_image_00000596_0.png, id=87, 642.4pt x 481.8pt>
 File: ./figs/cnn_image_00000596_0.png Graphic file (type png)
 
 <use ./figs/cnn_image_00000596_0.png>
 Package pdftex.def Info: ./figs/cnn_image_00000596_0.png used on input line 41.
 
 (pdftex.def)             Requested size: 113.52063pt x 85.13965pt.
-
-<./figs/tn_input_46.png, id=104, 1058.95625pt x 882.29625pt>
+ [5 <./figs/scott_img.jpg> <./figs/scott_sali.jpg> <./figs/scott_roi.jpg> <./fi
+gs/scott_best_roi.jpg> <./figs/scott_surf2.jpg> <./figs/scott_mask.jpg> <./figs
+/viconetexample.png>]
+<./figs/tn_input_46.png, id=100, 1058.95625pt x 882.29625pt>
 File: ./figs/tn_input_46.png Graphic file (type png)
 
 <use ./figs/tn_input_46.png>
 Package pdftex.def Info: ./figs/tn_input_46.png used on input line 96.
 (pdftex.def)             Requested size: 149.63654pt x 124.66496pt.
 
-<./figs/tn_dotp_46.jpg, id=106, 124.465pt x 94.3525pt>
+<./figs/tn_dotp_46.jpg, id=102, 124.465pt x 94.3525pt>
 File: ./figs/tn_dotp_46.jpg Graphic file (type jpg)
 
 <use ./figs/tn_dotp_46.jpg>
 Package pdftex.def Info: ./figs/tn_dotp_46.jpg used on input line 96.
 (pdftex.def)             Requested size: 165.12378pt x 125.18488pt.
 
-<./figs/tn_detection_46.jpg, id=108, 1058.95625pt x 882.29625pt>
+<./figs/tn_detection_46.jpg, id=104, 1058.95625pt x 882.29625pt>
 File: ./figs/tn_detection_46.jpg Graphic file (type jpg)
 
 <use ./figs/tn_detection_46.jpg>
 Package pdftex.def Info: ./figs/tn_detection_46.jpg used on input line 96.
 (pdftex.def)             Requested size: 149.63654pt x 124.66496pt.
-
-<./figs/oscillators.png, id=110, 510.708pt x 477.4638pt>
+ [6 <./figs/walk_left_p1.png (PNG copy)> <./figs/walk_right_p1.png (PNG copy)> 
+<./figs/walk_straight_p1.png (PNG copy)> <./figs/walk_left_p2.png (PNG copy)> <
+./figs/walk_right_p2.png (PNG copy)> <./figs/walk_straight_p2.png (PNG copy)> <
+./figs/oc_image_00000596_0.png (PNG copy)> <./figs/hwpedro_122000_image_0000059
+6_0.png (PNG copy)> <./figs/hwpedro_61000_image_00000596_0.png (PNG copy)> <./f
+igs/cnn_image_00000596_0.png (PNG copy)>]
+<./figs/oscillators.png, id=121, 510.708pt x 477.4638pt>
 File: ./figs/oscillators.png Graphic file (type png)
 
 <use ./figs/oscillators.png>
 Package pdftex.def Info: ./figs/oscillators.png used on input line 126.
 (pdftex.def)             Requested size: 226.79846pt x 212.02994pt.
-) (./src/conclusion.tex) [6] (./ces2016.bbl
-[7 <./figs/oc_image_00000596_0.png (PNG copy)> <./figs/hwpedro_122000_image_000
-00596_0.png (PNG copy)> <./figs/hwpedro_61000_image_00000596_0.png (PNG copy)> 
-<./figs/cnn_image_00000596_0.png (PNG copy)> <./figs/tn_input_46.png (PNG copy)
-> <./figs/tn_dotp_46.jpg> <./figs/tn_detection_46.jpg> <./figs/oscillators.png>
-]) [8
-
-] (./ces2016.aux) ) 
+) (./src/conclusion.tex) (./ces2016.bbl [7 <./figs/tn_input_46.png (PNG copy)> 
+<./figs/tn_dotp_46.jpg> <./figs/tn_detection_46.jpg> <./figs/oscillators.png>])
+ [8] (./ces2016.aux) ) 
 Here is how much of TeX's memory you used:
- 11284 strings out of 493315
- 205387 string characters out of 6137904
- 262830 words of memory out of 5000000
- 14456 multiletter control sequences out of 15000+600000
- 40524 words of font info for 78 fonts, out of 8000000 for 9000
+ 11289 strings out of 493315
+ 205448 string characters out of 6137904
+ 263838 words of memory out of 5000000
+ 14457 multiletter control sequences out of 15000+600000
+ 42727 words of font info for 80 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
- 55i,12n,55p,471b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.
-enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></u
-sr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/t
-exlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/201
-3/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ces2016.pdf (8 pages, 11396031 bytes).
+ 55i,13n,55p,471b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/
+8r.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
+0.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.p
+fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive
+/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2013/texm
+f-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ces2016.pdf (8 pages, 11409563 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
+ 162 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  348 words of extra memory for PDF output out of 10000 (max. 10000000)
 
